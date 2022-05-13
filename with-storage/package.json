@@ -11,11 +11,10 @@
   },
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
-    "test": "plasmo test"
+    "build": "plasmo build"
   },
   "dependencies": {
-    "@plasmohq/storage": "workspace:^0.1.0",
+    "@plasmohq/storage": "workspace:*",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
