@@ -1,8 +1,8 @@
 import { useStorage } from "@plasmohq/storage"
 
 function IndexPopup() {
-  const { value, persist } = useStorage("count", (storedCount) =>
-    persist((parseInt(storedCount ? storedCount : "0") + 1).toString())
+  const { value } = useStorage("count", (storedCount) =>
+    typeof storedCount === "number" ? storedCount + 1 : 0
   )
 
   return (
