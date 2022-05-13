@@ -1,10 +1,9 @@
 {
-  "name": "with-storage",
-  "displayName": "With storage",
+  "name": "with-many-content-scripts",
+  "displayName": "With many content scripts",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "coldsauce",
-  "packageManager": "pnpm@6.31.0",
+  "author": "lgvic",
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=16.0.0"
@@ -14,7 +13,6 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@plasmohq/storage": "workspace:*",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
