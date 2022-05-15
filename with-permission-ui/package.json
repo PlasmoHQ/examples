@@ -1,0 +1,35 @@
+{
+  "name": "with-permission-ui",
+  "displayName": "With permission ui",
+  "version": "0.0.0",
+  "description": "A basic Plasmo extension.",
+  "author": "lgvic",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build"
+  },
+  "dependencies": {
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "@plasmohq/permission-ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "3.2.0",
+    "@types/chrome": "0.0.184",
+    "@types/node": "17.0.33",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.4",
+    "plasmo": "latest",
+    "prettier": "2.6.2",
+    "typescript": "4.6.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
