@@ -1,8 +1,8 @@
 import { useStorage } from "@plasmohq/storage"
 
 function IndexPopup() {
-  const { value } = useStorage("count", (storedCount) =>
-    typeof storedCount === "number" ? storedCount + 1 : 0
+  const { value } = useStorage<number>("count", (storedCount) =>
+    typeof storedCount === "undefined" ? 0 : storedCount + 1
   )
 
   return (
