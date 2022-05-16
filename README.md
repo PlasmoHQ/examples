@@ -31,7 +31,7 @@ This will get you set up with a scaffolded project with everything you need to g
 
 ## Documentation
 
-Check out our [documentation](https://www.plasmo.com/docs/framework) to get a deeper look into what the framework offers.
+Check out our [documentation](https://docs.plasmo.com) to get a deeper look into what the framework offers.
 
 ## Examples
 
