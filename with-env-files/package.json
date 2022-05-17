@@ -1,6 +1,6 @@
 {
-  "name": "with-popup",
-  "displayName": "With popup",
+  "name": "with-env-local",
+  "displayName": "With env local",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "lgvic",
@@ -10,8 +10,7 @@
   },
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
-    "test": "plasmo test"
+    "build": "plasmo build"
   },
   "dependencies": {
     "react": "18.1.0",
