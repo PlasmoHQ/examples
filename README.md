@@ -1,21 +1,25 @@
 <p align="center">
-<a href="https://plasmo.com">
-<img alt="plasmo logo" width=75% src="plasmo.png" />
-</a>
-
+  <a href="https://plasmo.com">
+    <img alt="plasmo logo" width="75%" src="https://www.plasmo.com/assets/banner-black-on-white.png" />
+  </a>
 </p>
 
 <p align="center">
-  <a aria-label="License" href="https://github.com/PlasmoHQ/examples/blob/main/license.md">
-    <img src="https://img.shields.io/github/license/PlasmoHQ/examples?style=flat-square"/>
+  <a aria-label="License" href="./LICENSE">
+    <img alt="See License" src="https://img.shields.io/npm/l/plasmo"/>
   </a>
-  <a aria-label="NPM version" href="https://www.npmjs.com/package/plasmo">
-    <img alt="" src="https://img.shields.io/npm/v/plasmo?style=flat-square">
+  <a aria-label="Twitter" href="https://www.twitter.com/plasmohq">
+    <img alt="Follow PlasmoHQ on Twitter" src="https://img.shields.io/twitter/follow/plasmohq?logo=twitter"/>
   </a>
-  <a aria-label="Discord" href="https://discord.browser.market">
-    <img src="https://img.shields.io/discord/946290204443025438?style=flat-square"/>
+  <a aria-label="Twitch Stream" href="https://www.twitch.tv/plasmohq">
+    <img alt="Watch our Live DEMO every Friday" src="https://img.shields.io/twitch/status/plasmohq?logo=twitch&logoColor=white"/>
+  </a>
+  <a aria-label="Discord" href="https://www.plasmo.com/s/d">
+    <img alt="Join our Discord for support and chat about our projects" src="https://img.shields.io/discord/904466750429609984?logo=discord&logoColor=white"/>
   </a>
 </p>
+
+# Plasmo Framework
 
 A platform for building modern Browser Extensions.
 
