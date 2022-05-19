@@ -25,10 +25,14 @@ A platform for building modern Browser Extensions.
 
 ## Getting Started
 
-The easiest way to get hacking on the Plasmo Framework is to run our `init` command!
+The easiest way to get hacking on the Plasmo Framework is to run the `plasmo init` command!
 
-```
+```sh
 pnpm dlx plasmo init
+# OR npm v7
+npm x plasmo init
+# OR yarn v2
+yarn dlx plasmo init
 ```
 
 This will get you set up with a scaffolded project with everything you need to get started.
