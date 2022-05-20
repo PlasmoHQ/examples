@@ -1,3 +1,6 @@
 export {}
 
-console.log("Shield Frequency - KEEP SECRET:", process.env.SHIELD_FREQUENCY)
+console.log(
+  "Shield Frequency - SHHHH:",
+  process.env.PLASMO_PUBLIC_SHIELD_FREQUENCY
+)

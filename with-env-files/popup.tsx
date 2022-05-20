@@ -11,7 +11,7 @@ function IndexPopup() {
         href="https://docs.plasmo.com/workflows#adding-environment-variables">
         with-env-files example extension
       </a>
-      <p>Ship name: {process.env.SHIP_NAME}</p>
+      <p>Ship name: {process.env.PLASMO_PUBLIC_SHIP_NAME}</p>
     </div>
   )
 }
