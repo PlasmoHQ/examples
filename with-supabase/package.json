@@ -1,30 +1,25 @@
 {
-  "name": "with-storage",
-  "displayName": "With storage",
+  "name": "with-supabase",
+  "displayName": "With supabase",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "coldsauce",
-  "packageManager": "pnpm@6.31.0",
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
+  "author": "lgvic",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {
-    "@plasmohq/storage": "0.3.0",
+    "@supabase/supabase-js": "1.35.3",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
-    "@types/chrome": "0.0.188",
-    "@types/node": "17.0.35",
+    "@types/chrome": "0.0.186",
+    "@types/node": "17.0.34",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
-    "plasmo": "^0.29.1",
+    "plasmo": "0.30.0",
     "prettier": "2.6.2",
     "typescript": "4.6.4"
   },
