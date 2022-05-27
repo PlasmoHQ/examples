@@ -16,15 +16,8 @@ function IndexPopup() {
     })
 
     window.gtag("event", "login", {
-      method: "Google"
+      method: "TEST"
     })
-
-    fetch("https://ptsv2.com/t/2rzpf-1653626389/post", {
-      method: "POST",
-      body: "HELLO FROM EXT"
-    })
-
-    console.log("SENDING DATA")
   }, [])
 
   return (
