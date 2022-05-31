@@ -1,3 +1,7 @@
+# Warning
+
+This example does not support using Content Scripts with Redux. Please file an issue if you'd like us to support content scripts.
+
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
 ## Getting Started
