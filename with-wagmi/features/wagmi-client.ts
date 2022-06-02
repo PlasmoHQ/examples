@@ -1,10 +1,11 @@
 import { configureChains, createClient, defaultChains } from "wagmi"
-import { InjectedConnector } from "wagmi/connectors/injected"
+import { WalletConnectConnector } from "wagmi/connectors/walletConnect"
+import { alchemyProvider } from "wagmi/providers/alchemy"
 import { publicProvider } from "wagmi/providers/public"
 
 // Configure chains & providers with the Alchemy provider.
-// Two popular providers are Alchemy (alchemy.com) and Infura (infura.io)
 const { chains, provider, webSocketProvider } = configureChains(defaultChains, [
+  alchemyProvider({ alchemyId: process.env.PLASMO_PUBLIC_ALCHEMY_API_KEY }),
   publicProvider()
 ])
 
@@ -14,11 +15,10 @@ type Client = ReturnType<typeof createClient>
 export const client: Client = createClient({
   autoConnect: true,
   connectors: [
-    new InjectedConnector({
+    new WalletConnectConnector({
       chains,
       options: {
-        name: "Injected",
-        shimDisconnect: true
+        qrcode: true
       }
     })
   ],

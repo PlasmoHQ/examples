@@ -3,7 +3,7 @@ import { WagmiConfig } from "wagmi"
 import { Profile } from "~features/profile"
 import { client } from "~features/wagmi-client"
 
-const IndexOptions = () => {
+const IndexPopup = () => {
   return (
     <WagmiConfig client={client}>
       <div
@@ -18,4 +18,4 @@ const IndexOptions = () => {
   )
 }
 
-export default IndexOptions
+export default IndexPopup
