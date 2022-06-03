@@ -19,9 +19,9 @@
   </a>
 </p>
 
-# Plasmo Framework
+# Plasmo Framework Examples
 
-A platform for building modern Browser Extensions.
+This repository showcases what's possible with the [Plasmo Framework](https://github.com/PlasmoHQ/plasmo)!
 
 ## Getting Started
 
@@ -31,8 +31,6 @@ The easiest way to get hacking on the Plasmo Framework is to run the `plasmo ini
 pnpm dlx plasmo init
 # OR npm v7
 npm x plasmo init
-# OR yarn v2
-yarn dlx plasmo init
 ```
 
 This will get you set up with a scaffolded project with everything you need to get started.
@@ -40,7 +38,3 @@ This will get you set up with a scaffolded project with everything you need to g
 ## Documentation
 
 Check out our [documentation](https://docs.plasmo.com) to get a deeper look into what the framework offers.
-
-## Examples
-
-Take a look at the [Examples Repo on Github](https://github.com/PlasmoHQ/examples) to get a sense for what's possible with the Plasmo Framework!
