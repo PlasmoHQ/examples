@@ -2,7 +2,7 @@
   "name": "with-content-scripts-ui",
   "displayName": "With content scripts ui",
   "version": "0.0.0",
-  "description": "A basic Plasmo extension.",
+  "description": "This example demonstrates how to render a React component using content scripts",
   "author": "lgvic",
   "scripts": {
     "dev": "plasmo dev",
