@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function IndexPopup() {
+export function Main({ name = "Extension" }) {
   const [data, setData] = useState("")
 
   return (
@@ -11,11 +11,11 @@ function IndexPopup() {
         padding: 16
       }}>
       <h1>
-        Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
+        Welcome to your <a href="https://www.plasmo.com">Plasmo</a> {name}!
       </h1>
       <input onChange={(e) => setData(e.target.value)} value={data} />
+
+      <a href="https://docs.plasmo.com">READ THE DOCS!</a>
     </div>
   )
 }
-
-export default IndexPopup

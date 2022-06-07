@@ -29,6 +29,11 @@ out/
 build/
 dist/
 
+# vercel
+.vercel
+/.next/
+/out/
+
 # plasmo - https://www.plasmo.com
 .plasmo
 

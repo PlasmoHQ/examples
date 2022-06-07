@@ -4,14 +4,20 @@
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "lgvic",
-  "packageManager": "pnpm@7.1.7",
+  "packageManager": "pnpm@7.1.9",
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build"
+    "start": "next start",
+    "dev": "run-p dev:*",
+    "dev:plasmo": "plasmo dev",
+    "dev:next": "next dev --port 1947",
+    "build": "run-p build:*",
+    "build:plasmo": "plasmo build",
+    "build:next": "next build"
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "next": "12.1.6"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
