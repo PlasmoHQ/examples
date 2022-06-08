@@ -1,4 +1,4 @@
-import cssText from "bundle-text:./plasmo-overlay.css"
+import cssText from "bundle-text:~/contents/plasmo-overlay.css"
 import type { PlasmoContentScript } from "plasmo"
 
 export const config: PlasmoContentScript = {
@@ -20,7 +20,6 @@ const PlasmoOverlay = () => {
     <span
       className="hw-top"
       style={{
-        background: "white",
         padding: 12
       }}>
       HELLO WORLD TOP
