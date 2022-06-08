@@ -1,9 +1,10 @@
 {
-  "name": "with-content-scripts-ui",
-  "displayName": "With content scripts ui",
+  "name": "with-stripe",
+  "displayName": "With stripe",
   "version": "0.0.0",
-  "description": "This example demonstrates how to render a React component using content scripts",
+  "description": "A basic Plasmo extension.",
   "author": "lgvic",
+  "packageManager": "pnpm@7.1.9",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
@@ -25,9 +26,6 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
-    ],
-    "permissions": [
-      "tabs"
     ]
   }
 }
