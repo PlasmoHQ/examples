@@ -1,10 +1,10 @@
 {
-  "name": "with-google-analytics",
-  "displayName": "With google analytics",
+  "name": "with-newtab",
+  "displayName": "With newtab",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "lgvic",
-  "packageManager": "pnpm@7.1.2",
+  "packageManager": "pnpm@7.1.9",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
@@ -25,8 +25,10 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://ssl.google-analytics.com",
       "https://*/*"
+    ],
+    "permissions": [
+      "tabs"
     ]
   }
 }
