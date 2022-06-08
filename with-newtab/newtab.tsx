@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function IndexPopup() {
+function IndexNewtab() {
   const [data, setData] = useState("")
 
   return (
@@ -18,4 +18,4 @@ function IndexPopup() {
   )
 }
 
-export default IndexPopup
+export default IndexNewtab
