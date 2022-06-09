@@ -26,6 +26,10 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "identity",
+      "identity.email"
     ]
   }
 }
