@@ -10,7 +10,7 @@ const inject = async (tabId) => {
       func: windowChanger
     },
     () => {
-      console.log("yes")
+      console.log("Background script got callback after injection")
     }
   )
 }
