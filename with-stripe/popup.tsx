@@ -9,6 +9,10 @@ function IndexPopup() {
         setUserInfo(data)
       }
     })
+
+    chrome.identity.getAuthToken(null, (data) => {
+      console.log(data)
+    })
   }, [])
 
   return (
