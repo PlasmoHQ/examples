@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react"
 
+const getAccessToken = () =>
+  new Promise((resolve) =>
+    chrome.identity.getAuthToken(null, (token) => {
+      if (!!token) {
+        resolve(token)
+      }
+    })
+  )
+
 function IndexPopup() {
   const [userInfo, setUserInfo] = useState<chrome.identity.UserInfo>(null)
 
@@ -8,10 +17,6 @@ function IndexPopup() {
       if (data.email && data.id) {
         setUserInfo(data)
       }
-    })
-
-    chrome.identity.getAuthToken(null, (data) => {
-      console.log(data)
     })
   }, [])
 
@@ -28,12 +33,23 @@ function IndexPopup() {
       Your email is: <b>{userInfo?.email}</b>
       <button
         disabled={!userInfo}
-        onClick={() => {
-          window.open(
-            `${process.env.PLASMO_PUBLIC_STRIPE_LINK}?client_reference_id=${
-              userInfo.id
-            }&prefilled_email=${encodeURIComponent(userInfo.email)}`,
-            "_blank"
+        onClick={async () => {
+          chrome.identity.getAuthToken(
+            {
+              interactive: true
+            },
+            (token) => {
+              if (!!token) {
+                window.open(
+                  `${
+                    process.env.PLASMO_PUBLIC_STRIPE_LINK
+                  }?client_reference_id=${
+                    userInfo.id
+                  }&prefilled_email=${encodeURIComponent(userInfo.email)}`,
+                  "_blank"
+                )
+              }
+            }
           )
         }}>
         Subscribe to Paid feature

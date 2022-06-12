@@ -6,12 +6,17 @@
   "author": "lgvic",
   "packageManager": "pnpm@7.1.9",
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build"
+    "dev": "run-p dev:*",
+    "dev:plasmo": "plasmo dev",
+    "dev:next": "next dev --port 1947",
+    "build": "run-p build:*",
+    "build:plasmo": "plasmo build",
+    "build:next": "next build"
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "plasmo": "0.41.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
@@ -19,12 +24,18 @@
     "@types/node": "17.0.42",
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
-    "plasmo": "0.41.0",
     "prettier": "2.6.2",
     "typescript": "4.7.3"
   },
   "manifest": {
     "key": "$CRX_PUBLIC_KEY",
+    "oauth2": {
+      "client_id": "$OAUTH_CLIENT_ID",
+      "scopes": [
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
     "host_permissions": [
       "https://*/*"
     ],
