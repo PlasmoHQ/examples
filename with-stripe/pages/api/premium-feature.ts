@@ -7,7 +7,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    if (req.method !== "GET") {
+    if (req.method !== "POST") {
       throw new Error("Invalid request method")
     }
 
@@ -15,7 +15,11 @@ export default async function handler(
 
     const subscription = await getSubsciption(userInfo.email)
 
-    return res.status(200).json({ active: subscription.status === "active" })
+    if (subscription.status !== "active") {
+      throw new Error(`Subscription is not active`)
+    }
+
+    return res.status(200).json({ success: true, code: "147" })
   } catch (error) {
     return res.status(401).json({ success: false, error: error.message })
   }

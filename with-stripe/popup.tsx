@@ -1,36 +1,17 @@
-import { useEffect, useState } from "react"
+import useSWR from "swr"
 
-const getAccessToken = () =>
-  new Promise((resolve) =>
-    chrome.identity.getAuthToken(null, (token) => {
-      if (!!token) {
-        resolve(token)
-      }
-    })
+import { callAPI } from "~core/premium-api"
+import { UserInfoProvider, useUserInfo } from "~core/user-info"
+
+const PremiumFeatureButton = () => {
+  const { data, error } = useSWR<{ active: boolean }>(
+    "/api/check-subscription",
+    callAPI
   )
+  const userInfo = useUserInfo()
 
-function IndexPopup() {
-  const [userInfo, setUserInfo] = useState<chrome.identity.UserInfo>(null)
-
-  useEffect(() => {
-    chrome.identity.getProfileUserInfo((data) => {
-      if (data.email && data.id) {
-        setUserInfo(data)
-      }
-    })
-  }, [])
-
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
-      <h1>
-        Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
-      </h1>
-      Your email is: <b>{userInfo?.email}</b>
+  if (!!error || !data?.active) {
+    return (
       <button
         disabled={!userInfo}
         onClick={async () => {
@@ -54,7 +35,49 @@ function IndexPopup() {
         }}>
         Subscribe to Paid feature
       </button>
+    )
+  }
+
+  return (
+    <button
+      onClick={async () => {
+        const data = await callAPI("/api/premium-feature", {
+          method: "POST"
+        })
+
+        alert(data.code)
+      }}>
+      Calling Awesome Premium Feature
+    </button>
+  )
+}
+
+const EmailShowcase = () => {
+  const userInfo = useUserInfo()
+
+  return (
+    <div>
+      Your email is: <b>{userInfo?.email}</b>
     </div>
+  )
+}
+
+function IndexPopup() {
+  return (
+    <UserInfoProvider>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          padding: 16
+        }}>
+        <h1>
+          Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
+        </h1>
+        <EmailShowcase />
+        <PremiumFeatureButton />
+      </div>
+    </UserInfoProvider>
   )
 }
 
