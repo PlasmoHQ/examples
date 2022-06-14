@@ -35,6 +35,14 @@ npm x plasmo init
 
 This will get you set up with a scaffolded project with everything you need to get started.
 
+## Filing an issue to Request/Improve an Example
+
+Please visit this [issue form](https://github.com/PlasmoHQ/plasmo/issues/new?assignees=&labels=documentation&template=2.example.yml&title=EXP+%7C+) in the [plasmo repo](https://github.com/PlasmoHQ/plasmo). Thanks 😀
+
 ## Documentation
 
 Check out our [documentation](https://docs.plasmo.com) to get a deeper look into what the framework offers.
+
+# License
+
+[MIT](./LICENSE) ⭐ [Plasmo](https://www.plasmo.com)
