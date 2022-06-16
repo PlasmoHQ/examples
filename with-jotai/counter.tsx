@@ -1,6 +1,6 @@
-import { useAtom } from "jotai"
+import { atom, useAtom } from "jotai"
 
-import counterAtom from "~atoms"
+const counterAtom = atom<number>(0);
 
 const CounterView = () => {
     const [counter, setCounter] = useAtom(counterAtom);
