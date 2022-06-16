@@ -2,11 +2,11 @@
   "name": "with-jotai",
   "displayName": "With jotai",
   "version": "0.0.0",
-  "description": "A basic Plasmo extension.",
+  "description": "Plasmo extension which uses jotai library for state management",
   "author": "yashwadhia",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build"
+    "build": "plasmo build" 
   },
   "dependencies": {
     "jotai": "1.7.2",
