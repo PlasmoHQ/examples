@@ -2,7 +2,8 @@ import cssText from "data-text:~/contents/plasmo-overlay.css"
 import type { PlasmoContentScript } from "plasmo"
 
 export const config: PlasmoContentScript = {
-  matches: ["https://www.plasmo.com/*"]
+  matches: ["https://www.plasmo.com/*"],
+  css: ["font.css"]
 }
 
 // Idea for an UI API, for popup, notification badge, or mounting UI
