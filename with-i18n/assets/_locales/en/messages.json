@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "with-18n",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Example using i18n!",
+    "description": "Description of the extension."
+  },
+  "popup": {
+    "message": "This is showing the power of i18n!",
+    "description": "Popup message."
+  }
+}
