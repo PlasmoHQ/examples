@@ -1,4 +1,4 @@
-import React from "react"
+import { useState } from "react"
 import { useQuery } from "react-query"
 
 type User = {
@@ -7,21 +7,23 @@ type User = {
 }
 
 const Search = () => {
-  const [username, setUsername] = React.useState(undefined)
+  const [username, setUsername] = useState<string>()
+
   const { status, error, data } = useQuery<boolean, Error, User>(
     ["githubUser", username],
-    ({ queryKey }) =>
-      fetch(`https://api.github.com/users/${queryKey[1]}`).then((res) => {
-        if (res.status === 200) {
-          return res.json()
-        } else if (res.status === 404) {
-          throw new Error("User not found")
-        } else {
-          throw new Error("Failed to fetch user")
-        }
-      }),
+    async ({ queryKey }) => {
+      const res = await fetch(`https://api.github.com/users/${queryKey[1]}`)
+      if (res.status === 200) {
+        return res.json()
+      } else if (res.status === 404) {
+        throw new Error("User not found")
+      } else {
+        throw new Error("Failed to fetch user")
+      }
+    },
     { enabled: Boolean(username) }
   )
+
   return (
     <div
       style={{
@@ -29,7 +31,7 @@ const Search = () => {
       }}>
       <input
         type="text"
-        placeholder="Github username Search"
+        placeholder="Github username search"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
