@@ -14,7 +14,7 @@
     "test": "plasmo test"
   },
   "dependencies": {
-    "plasmo": "0.42.9",
+    "plasmo": "0.43.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
