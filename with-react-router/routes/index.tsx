@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 
-import { About } from "~pages/about"
-import { Home } from "~pages/home"
+import { About } from "./about"
+import { Home } from "./home"
 
 export const Routing = () => (
   <Routes>
