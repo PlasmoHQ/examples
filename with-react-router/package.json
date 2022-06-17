@@ -9,7 +9,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "plasmo": "0.43.0",
+    "plasmo": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.3.0"

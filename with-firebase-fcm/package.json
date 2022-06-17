@@ -20,7 +20,7 @@
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
-    "plasmo": "0.43.0",
+    "plasmo": "latest",
     "prettier": "2.7.1",
     "typescript": "4.7.4"
   },
