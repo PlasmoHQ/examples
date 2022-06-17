@@ -15,7 +15,7 @@ export default async function handler(
 
     const subscription = await getSubsciption(userInfo.email)
 
-    return res.status(200).json({ active: subscription.status === "active" })
+    return res.status(200).json({ active: false })
   } catch (error) {
     return res.status(401).json({ success: false, error: error.message })
   }
