@@ -24,7 +24,7 @@
     "swr": "1.3.0"
   },
   "devDependencies": {
-    "@plasmohq/rps": "1.3.4",
+    "@plasmohq/rps": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
     "@types/chrome": "0.0.190",
     "@types/node": "18.0.0",
