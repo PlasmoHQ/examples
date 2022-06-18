@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "jotai": "1.7.2",
-    "plasmo": "latest",
+    "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
