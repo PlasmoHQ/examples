@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "google-auth-library": "8.0.3",
-    "next": "12.1.6",
+    "next": "12.2.0",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
     "react": "18.2.0",
