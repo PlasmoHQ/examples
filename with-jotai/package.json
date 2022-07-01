@@ -9,7 +9,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "jotai": "1.7.2",
+    "jotai": "1.7.3",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
