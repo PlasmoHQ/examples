@@ -3,7 +3,7 @@ import { useStorage } from "@plasmohq/storage"
 function IndexOptions() {
   const [openCount] = useStorage<number>("open-count")
 
-  const [checked] = useStorage("checked")
+  const [checked] = useStorage("checked", false)
 
   return (
     <div
