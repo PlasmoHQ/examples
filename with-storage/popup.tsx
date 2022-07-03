@@ -6,6 +6,10 @@ function IndexPopup() {
   )
 
   const [checked, setChecked] = useStorage("checked", true)
+  const [serialNumber, setSerialNumber] = useStorage(
+    "serial-number",
+    () => "8427"
+  )
 
   return (
     <div
@@ -20,6 +24,11 @@ function IndexPopup() {
         checked={checked}
         onChange={(e) => setChecked(e.target.checked)}
       />
+      <input
+        value={serialNumber}
+        onChange={(e) => setSerialNumber(e.target.value)}
+      />
+      {serialNumber}
     </div>
   )
 }

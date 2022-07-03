@@ -14,7 +14,9 @@ export const getRootContainer = () => {
 }
 
 const PlasmoOverlay = () => {
-  const [checked] = useStorage("checked", false)
+  const [openCount] = useStorage<number>("open-count")
+  const [checked] = useStorage<boolean>("checked")
+  const [serialNumber] = useStorage<string>("serial-number")
 
   return (
     <span
@@ -23,6 +25,10 @@ const PlasmoOverlay = () => {
       }}>
       <h1>HELLO WORLD ROOT CONTAINER</h1>
       <input type={"checkbox"} readOnly checked={checked} />
+      <p>
+        Open: {openCount}
+        <i>#{serialNumber}</i>
+      </p>
     </span>
   )
 }
