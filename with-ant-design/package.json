@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
+    "@parcel/core": "2.6.2",
+    "@parcel/transformer-less": "2.6.2",
     "@types/chrome": "0.0.193",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
