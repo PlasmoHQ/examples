@@ -5,7 +5,7 @@
   "description": "A basic Plasmo extension.",
   "author": "coldsauce",
   "scripts": {
-    "dev": "plasmo dev",
+    "dev": "plasmo dev --no-source-maps",
     "build": "plasmo build"
   },
   "dependencies": {
