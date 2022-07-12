@@ -20,7 +20,7 @@
     "puro": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "9.12.0",
+    "stripe": "9.13.0",
     "swr": "1.3.0"
   },
   "devDependencies": {
