@@ -1,6 +1,6 @@
 import { Button } from "antd"
 
-import "./index.css"
+import "./index.less"
 
 function IndexPopup() {
   return (

@@ -1,26 +1,5 @@
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
-## NOTE: Working with LESS
-
-1. Add the following package to the devDependencies: `@parcel/core` and `@parcel/transformer-less`.
-2. Create a `.lessrc` file:
-
-   ```json
-   {
-     "javascriptEnabled": true
-   }
-   ```
-
-3. Rename `index.css` to `index.less`, and change its content to:
-
-   ```less
-   @import "antd/dist/antd.less";
-   @primary-color: pink;
-   ```
-
-4. Rename all `index.css` import to `index.less` import
-5. Change the `dev` script in `package.json` to: `plasmo dev --no-source-maps`
-
 ## Getting Started
 
 First, run the development server:
