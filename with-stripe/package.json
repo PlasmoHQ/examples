@@ -14,7 +14,7 @@
     "build:next": "next build"
   },
   "dependencies": {
-    "google-auth-library": "8.1.0",
+    "google-auth-library": "8.1.1",
     "next": "12.2.2",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
@@ -27,7 +27,7 @@
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.0.3",
+    "@types/node": "18.0.4",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
