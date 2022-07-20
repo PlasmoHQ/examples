@@ -3,8 +3,11 @@
   "displayName": "With react query",
   "version": "0.0.0",
   "description": "Plasmo extension using react-query example",
-  "author": "n4ze3m",
-  "packageManager": "pnpm@7.2.1",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "n4ze3m",
+    "louisgv"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
@@ -13,12 +16,12 @@
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-query": "3.39.2"
+    "@tanstack/react-query": "4.0.8"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.0.4",
+    "@types/node": "18.0.6",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
