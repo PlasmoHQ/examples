@@ -13,10 +13,10 @@
     "build": "plasmo build"
   },
   "dependencies": {
+    "@tanstack/react-query": "4.0.10",
     "plasmo": "workspace:*",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@tanstack/react-query": "4.0.8"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
