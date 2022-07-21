@@ -3,7 +3,7 @@ import type { PlasmoContentScript } from "plasmo"
 import { useReducer } from "react"
 
 export const config: PlasmoContentScript = {
-  matches: ["https://www.plasmo.com/*"],
+  matches: ["https://book.douban.com/*"],
 }
 
 // Idea for an UI API, for popup, notification badge, or mounting UI
@@ -16,6 +16,12 @@ export const getStyle = () => {
   return style
 }
 
+/*the same as not written these codes*/
+export const getMountPoint =
+    async () =>
+        document.querySelector('body');
+
+        
 const PlasmoOverlay = () => {
     const [count, increase] = useReducer((c) => c + 1, 0)
 
