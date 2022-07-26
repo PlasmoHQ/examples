@@ -3,7 +3,10 @@
   "displayName": "With permission ui",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=16.0.0"

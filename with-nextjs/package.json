@@ -3,7 +3,10 @@
   "displayName": "With nextjs",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "packageManager": "pnpm@7.1.9",
   "scripts": {
     "start": "next start",

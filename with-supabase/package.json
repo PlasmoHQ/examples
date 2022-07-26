@@ -3,7 +3,10 @@
   "displayName": "With supabase",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"

@@ -3,7 +3,10 @@
   "displayName": "With devtools",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "packageManager": "pnpm@7.5.0",
   "scripts": {
     "dev": "plasmo dev",

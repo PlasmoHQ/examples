@@ -3,7 +3,10 @@
   "displayName": "With jest",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "coldsauce",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "coldsauce"
+  ],
   "packageManager": "pnpm@7.1.2",
   "scripts": {
     "dev": "plasmo dev",
