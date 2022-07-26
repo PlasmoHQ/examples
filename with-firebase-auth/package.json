@@ -3,7 +3,10 @@
   "displayName": "Firebase Plasmo example",
   "version": "0.0.0",
   "description": "Showcasing how easy it is to have auth with Plasmo.",
-  "author": "coldsauce",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "coldsauce"
+  ],
   "packageManager": "pnpm@6.31.0",
   "engines": {
     "npm": ">=7.0.0",

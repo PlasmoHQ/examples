@@ -3,7 +3,10 @@
   "displayName": "With wagmi",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
@@ -12,7 +15,7 @@
     "ethers": "5.6.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "wagmi": "0.5.11"
+    "wagmi": "0.5.12"
   },
   "devDependencies": {
     "@babel/core": "7.18.9",

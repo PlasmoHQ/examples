@@ -3,7 +3,10 @@
   "displayName": "With content scripts ui",
   "version": "0.0.0",
   "description": "This example demonstrates how to render a React component using content scripts",
-  "author": "lgvic",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"

@@ -3,7 +3,10 @@
   "displayName": "With storage",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "coldsauce",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "coldsauce"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"

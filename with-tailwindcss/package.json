@@ -3,8 +3,10 @@
   "displayName": "With tailwindcss",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
-  "author": "lgvic",
-  "packageManager": "pnpm@7.0.1",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv"
+  ],
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=16.0.0"

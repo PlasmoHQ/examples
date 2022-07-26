@@ -3,7 +3,10 @@
   "displayName": "With i18n",
   "version": "0.0.0",
   "description": "__MSG_extensionDescription__",
-  "author": "coldsauce",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "coldsauce"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
