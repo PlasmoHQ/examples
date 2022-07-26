@@ -7,7 +7,6 @@
   "contributors": [
     "louisgv"
   ],
-  "packageManager": "pnpm@7.1.2",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"

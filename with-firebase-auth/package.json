@@ -7,17 +7,13 @@
   "contributors": [
     "coldsauce"
   ],
-  "packageManager": "pnpm@6.31.0",
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {
-    "firebase": "^9.9.1",
+    "plasmo": "workspace:*",
+    "firebase": "9.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -27,12 +23,11 @@
     "@types/node": "18.6.1",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "plasmo": "workspace:*",
     "prettier": "2.7.1",
     "typescript": "4.7.4"
   },
   "manifest": {
-    "key": "TODO: PUT YOUR OWN KEY HERE",
+    "key": "$CRX_PUBLIC_KEY",
     "host_permissions": [
       "https://*/*"
     ],
