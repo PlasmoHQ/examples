@@ -5,7 +5,8 @@
   "description": "Integrating Emotion styling solution with Plasmo.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "olhapi"
+    "olhapi",
+    "louisgv"
   ],
   "scripts": {
     "dev": "plasmo dev",

@@ -1,34 +1,11 @@
-import { useState, useMemo } from "react"
-import createCache from "@emotion/cache";
-import styled from "@emotion/styled";
-import { CacheProvider } from "@emotion/react";
+import { useState } from "react"
 
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-`;
-
-const Link = styled.a`
-  padding: 0.25rem;
-  color: cornflowerblue;
-`;
+import { Container, Link } from "~components"
 
 function IndexPopup() {
-  const [data, setData] = useState("");
-  const styleCache = useMemo(() => {
-    const $mountPoint = document.getElementById("root");
-    const cache = createCache({
-      key: "emotion-cache",
-      prepend: true,
-      container: $mountPoint.shadowRoot,
-    });
-
-    return cache;
-  }, []);
+  const [data, setData] = useState("")
 
   return (
-    <CacheProvider value={styleCache}>
     <Container>
       <h2>
         Welcome to your{" "}
@@ -42,8 +19,7 @@ function IndexPopup() {
         View Docs
       </Link>
     </Container>
-    </CacheProvider>
   )
 }
 
-export default IndexPopup;
+export default IndexPopup

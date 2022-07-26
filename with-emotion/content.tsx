@@ -1,42 +1,21 @@
-import { useState, useMemo } from "react"
-import createCache from "@emotion/cache";
-import styled from "@emotion/styled";
-import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache"
+import { CacheProvider } from "@emotion/react"
+import { useState } from "react"
 
-const ROOT_TAGNAME = "unique-container-tagname";
+import { Container, Link } from "~components"
 
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  margin: 0 auto;
-`;
+const styleElement = document.createElement("style")
 
-const Link = styled.a`
-  padding: 0.25rem;
-  color: cornflowerblue;
-`;
+const styleCache = createCache({
+  key: "plasmo-emotion-cache",
+  prepend: true,
+  container: styleElement
+})
 
-const getRootContainer = async () => {
-  const container = document.createElement(ROOT_TAGNAME);
-  document.body.prepend(container);
-  container.attachShadow({ mode: "open" });
+export const getStyle = () => styleElement
 
-  return container.shadowRoot;
-};
-
-function IndexPopup() {
-  const [data, setData] = useState("");
-  const styleCache = useMemo(() => {
-    const $mountPoint = document.querySelector(ROOT_TAGNAME);
-    const cache = createCache({
-      key: "emotion-cache",
-      prepend: true,
-      container: $mountPoint.shadowRoot,
-    });
-
-    return cache;
-  }, []);
+function PlasmoOverlay() {
+  const [data, setData] = useState("")
 
   return (
     <CacheProvider value={styleCache}>
@@ -57,6 +36,4 @@ function IndexPopup() {
   )
 }
 
-export default IndexPopup;
-
-export { getRootContainer };
+export default PlasmoOverlay
