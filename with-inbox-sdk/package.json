@@ -24,24 +24,23 @@
     "prettier": "2.7.1",
     "typescript": "4.7.4"
   },
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "@inboxsdk/core/pageWorld.js",
-        "@inboxsdk/core/background.js"
-      ],
-      "matches": [
-        "https://mail.google.com/*",
-        "https://inbox.google.com/*"
-      ]
-    }
-  ],
   "manifest": {
     "host_permissions": [
       "https://*/*"
     ],
     "permissions": [
       "scripting"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "@inboxsdk/core/pageWorld.js"
+        ],
+        "matches": [
+          "https://mail.google.com/*",
+          "https://inbox.google.com/*"
+        ]
+      }
     ]
   },
   "contributors": [
