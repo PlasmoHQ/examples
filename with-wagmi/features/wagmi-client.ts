@@ -5,7 +5,7 @@ import { publicProvider } from "wagmi/providers/public"
 
 // Configure chains & providers with the Alchemy provider.
 const { chains, provider, webSocketProvider } = configureChains(defaultChains, [
-  alchemyProvider({ alchemyId: process.env.PLASMO_PUBLIC_ALCHEMY_API_KEY }),
+  alchemyProvider({ apiKey: process.env.PLASMO_PUBLIC_ALCHEMY_API_KEY }),
   publicProvider()
 ])
 

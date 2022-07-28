@@ -7,10 +7,10 @@ import {
 } from "wagmi"
 
 export function Profile() {
-  const { data: account } = useAccount()
+  const account = useAccount()
   const { data: ensAvatar } = useEnsAvatar({ addressOrName: account?.address })
   const { data: ensName } = useEnsName({ address: account?.address })
-  const { connect, connectors, error, isConnecting, pendingConnector } =
+  const { connect, connectors, error, isLoading, pendingConnector } =
     useConnect()
   const { disconnect } = useDisconnect()
 
@@ -35,10 +35,14 @@ export function Profile() {
         <button
           disabled={!connector.ready}
           key={connector.id}
-          onClick={() => connect(connector)}>
+          onClick={() =>
+            connect({
+              connector
+            })
+          }>
           {connector.name}
           {!connector.ready && " (unsupported)"}
-          {isConnecting &&
+          {isLoading &&
             connector.id === pendingConnector?.id &&
             " (connecting)"}
         </button>

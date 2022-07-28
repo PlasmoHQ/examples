@@ -18,7 +18,7 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.6.1",
+    "@types/node": "18.6.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",
