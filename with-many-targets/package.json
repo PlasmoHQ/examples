@@ -1,0 +1,38 @@
+{
+  "name": "with-many-targets",
+  "displayName": "With many targets",
+  "version": "0.0.0",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "scripts": {
+    "dev:chrome": "plasmo dev",
+    "dev:firefox": "plasmo dev --target=firefox-mv2",
+    "build": "run-s build:*",
+    "build:chrome": "plasmo build",
+    "build:firefox": "plasmo build --target=firefox-mv2",
+    "build:brave": "plasmo build --target=brave-mv3"
+  },
+  "dependencies": {
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@plasmohq/rps": "workspace:*",
+    "@types/chrome": "0.0.193",
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  },
+  "contributors": [
+    "lgvic"
+  ]
+}
