@@ -5,8 +5,9 @@
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "scripts": {
-    "dev:chrome": "plasmo dev",
+    "dev": "plasmo dev",
     "dev:firefox": "plasmo dev --target=firefox-mv2",
+    "dev:brave": "plasmo dev --target=brave-mv3",
     "build": "run-s build:*",
     "build:chrome": "plasmo build",
     "build:firefox": "plasmo build --target=firefox-mv2",
