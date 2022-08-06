@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@plasmohq/storage": "workspace:*",
-    "firebase": "^9.9.1",
+    "firebase": "^9.9.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.6.3",
+    "@types/node": "18.6.4",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",
