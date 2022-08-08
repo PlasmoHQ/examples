@@ -16,9 +16,9 @@
     "vue": "3.2.37"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:1.2.0",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.6.4",
+    "@types/node": "18.6.5",
     "prettier": "2.7.1",
     "typescript": "4.7.4"
   },
