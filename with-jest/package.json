@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@jest/types": "28.1.3",
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:1.2.0",
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.193",
     "@types/node": "18.6.5",
     "@types/react": "18.0.17",
