@@ -24,7 +24,7 @@
     "@babel/core": "7.18.10",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.193",
-    "@types/node": "18.7.2",
+    "@types/node": "18.7.6",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
