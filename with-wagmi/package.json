@@ -12,16 +12,16 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "ethers": "5.6.9",
+    "ethers": "5.7.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "wagmi": "0.6.3"
+    "wagmi": "0.6.4"
   },
   "devDependencies": {
     "@babel/core": "7.18.10",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.193",
-    "@types/node": "18.7.6",
+    "@types/chrome": "0.0.195",
+    "@types/node": "18.7.8",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",
