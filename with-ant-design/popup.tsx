@@ -1,19 +1,17 @@
-import { Button } from "antd"
-
-import "./index.less"
+import { ProCard } from "@ant-design/pro-components"
 
 function IndexPopup() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
-      <h1>
-        Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
-      </h1>
-      <Button type="primary">Hello Ant Design</Button>
+    <div style={{ display: "flex", flexDirection: "column", padding: 16 }}>
+      <ProCard
+        title="默认尺寸"
+        extra="extra"
+        tooltip="这是提示"
+        style={{ maxWidth: 300 }}>
+        <div>Card content</div>
+        <div>Card content</div>
+        <div>Card content</div>
+      </ProCard>
     </div>
   )
 }

@@ -12,13 +12,14 @@
     "build": "plasmo build"
   },
   "dependencies": {
+    "@ant-design/pro-components": "^1.1.17",
     "antd": "4.22.5",
-    "plasmo": "workspace:*",
+    "plasmo": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@plasmohq/prettier-plugin-sort-imports": "latest",
     "@types/chrome": "0.0.193",
     "@types/node": "18.7.6",
     "@types/react": "18.0.17",
