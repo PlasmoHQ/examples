@@ -29,6 +29,11 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
-    ]
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "with-storage@plasmo.org"
+      }
+    }
   }
 }
