@@ -16,24 +16,24 @@
     "build:next": "next build"
   },
   "dependencies": {
-    "google-auth-library": "8.3.0",
+    "google-auth-library": "8.4.0",
     "next": "12.2.5",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "10.3.0",
+    "stripe": "10.6.0",
     "swr": "1.3.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
     "@types/chrome": "0.0.195",
-    "@types/node": "18.7.8",
+    "@types/node": "18.7.13",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
-    "typescript": "4.7.4"
+    "typescript": "4.8.2"
   },
   "manifest": {
     "key": "$CRX_PUBLIC_KEY",
