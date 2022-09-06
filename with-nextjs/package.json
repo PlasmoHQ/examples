@@ -25,7 +25,7 @@
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/storage": "workspace:*",
     "@types/chrome": "0.0.196",
-    "@types/node": "18.7.14",
+    "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",

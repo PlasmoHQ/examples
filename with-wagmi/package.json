@@ -18,10 +18,10 @@
     "wagmi": "0.6.4"
   },
   "devDependencies": {
-    "@babel/core": "7.18.13",
+    "@babel/core": "7.19.0",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.196",
-    "@types/node": "18.7.14",
+    "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",
