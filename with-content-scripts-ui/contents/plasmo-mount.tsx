@@ -1,10 +1,11 @@
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoContentScript, PlasmoGetOverlayAnchor } from "plasmo"
 
 export const config: PlasmoContentScript = {
   matches: ["https://www.plasmo.com/*"]
 }
 
-export const getMountPoint = async () => document.querySelector("#pricing")
+export const getOverlayAnchor: PlasmoGetOverlayAnchor = async () =>
+  document.querySelector<HTMLElement>("#pricing")
 
 const PlasmoPricingExtra = () => {
   return (
