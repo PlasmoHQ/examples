@@ -32,7 +32,7 @@
     ],
     "browser_specific_settings": {
       "gecko": {
-        "id": "with-storage@plasmo.org"
+        "id": "$FIREFOX_EXT_ID"
       }
     }
   }
