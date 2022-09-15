@@ -9,23 +9,17 @@ const tsconfig = require("./tsconfig.json")
  */
 
 const config = {
-  testEnvironment: "jsdom",
-  transform: {
-    "\\.tsx?$": "ts-jest"
-  },
-  testRegex: "^.+\\.test.tsx?$",
-  moduleFileExtensions: ["js", "ts", "tsx"],
+  setupFiles: ["jest-webextension-mock"],
+  extensionsToTreatAsEsm: [".ts", ".tsx"],
+  testRegex: ["^.+\\.test.tsx?$"],
   moduleNameMapper: pathsToModuleNameMapper(tsconfig.compilerOptions.paths, {
     prefix: "<rootDir>/"
   }),
-  globals: {
-    "ts-jest": {
-      tsconfig: {
-        jsx: "react-jsx"
-      }
-    }
-  },
-  setupFiles: ["jest-webextension-mock"]
+  testEnvironment: "jsdom",
+  transform: {
+    "^.+\\.ts?$": ["ts-jest", { isolatedModules: true, useESM: true }],
+    "^.+\\.tsx?$": ["ts-jest", { useESM: true, tsconfig: { jsx: "react-jsx" } }]
+  }
 }
 
 export default config

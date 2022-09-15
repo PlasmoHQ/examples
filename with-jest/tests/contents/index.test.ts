@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals"
 
 import { createGoogleSearch } from "~contents"
 
-describe("your function to test", () => {
+describe("test contents/index", () => {
   it("should have called a webextension API", () => {
     createGoogleSearch()
     expect(chrome.tabs.create).toHaveBeenCalledWith({
