@@ -7,6 +7,9 @@ export const config: PlasmoContentScript = {
 export const getInlineAnchor: PlasmoGetInlineAnchor = () =>
   document.querySelector("#supercharge > h2 > span")
 
+// Use this to optimize unmount lookups
+export const getShadowHostId = () => "plasmo-inline-example-unique-id"
+
 const PlasmoInline = () => {
   return <button>Custom button</button>
 }
