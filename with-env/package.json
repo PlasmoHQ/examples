@@ -1,6 +1,6 @@
 {
   "name": "with-env",
-  "displayName": "With env files",
+  "displayName": "This example demonstrates a variety of ways to use environment variables with plasmo",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
