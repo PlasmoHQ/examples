@@ -1,8 +1,8 @@
 {
   "name": "with-env",
-  "displayName": "This example demonstrates a variety of ways to use environment variables with plasmo",
+  "displayName": "With env",
   "version": "0.0.0",
-  "description": "A basic Plasmo extension.",
+  "description": "This example demonstrates a variety of ways to use environment variables with plasmo",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
     "louisgv"
