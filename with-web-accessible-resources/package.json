@@ -29,6 +29,15 @@
     "web_accessible_resources": [
       {
         "resources": [
+          "_favicon/*"
+        ],
+        "matches": [
+          "http://localhost:3000/*",
+          "https://*.plasmo.com/*"
+        ]
+      },
+      {
+        "resources": [
           "~raw.js",
           "assets/pic*.png",
           "resources/test.json"
