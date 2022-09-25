@@ -1,4 +1,4 @@
-import { useStorage } from "@plasmohq/storage"
+import { useStorage } from "@plasmohq/storage/hook"
 
 function IndexOptions() {
   const [openCount] = useStorage<number>("open-count")

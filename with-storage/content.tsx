@@ -1,4 +1,4 @@
-import { useStorage } from "@plasmohq/storage"
+import { useStorage } from "@plasmohq/storage/hook"
 import type { PlasmoContentScript } from "plasmo"
 
 export const config: PlasmoContentScript = {
