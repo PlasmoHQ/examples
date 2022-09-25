@@ -1,6 +1,6 @@
 {
-  "name": "__MSG_extensionName__",
-  "displayName": "With i18n",
+  "name": "with-locales",
+  "displayName": "With locales",
   "version": "0.0.0",
   "description": "__MSG_extensionDescription__",
   "author": "Plasmo Corp. <foss@plasmo.com>",
@@ -26,9 +26,9 @@
     "typescript": "4.8.3"
   },
   "manifest": {
+    "name": "__MSG_extensionName__",
     "host_permissions": [
       "https://*/*"
-    ],
-    "default_locale": "en"
+    ]
   }
 }
