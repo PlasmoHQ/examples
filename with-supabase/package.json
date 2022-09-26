@@ -12,15 +12,15 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@supabase/supabase-js": "1.35.6",
+    "@supabase/supabase-js": "1.35.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.197",
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
+    "@types/node": "18.7.22",
+    "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "plasmo": "workspace:*",
     "prettier": "2.7.1",

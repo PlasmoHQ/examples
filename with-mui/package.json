@@ -12,7 +12,7 @@
     "@emotion/cache": "11.10.3",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
-    "@mui/material": "5.10.5",
+    "@mui/material": "5.10.6",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -21,8 +21,8 @@
     "@babel/core": "7.19.1",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.197",
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
+    "@types/node": "18.7.22",
+    "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
     "typescript": "4.8.3"
