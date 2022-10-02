@@ -21,5 +21,5 @@
 </script>
 
 <div>
-  <button>Custom button</button>
+  <button>A lie is a very poor way to say hello</button>
 </div>

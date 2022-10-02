@@ -13,4 +13,4 @@
   }
 </script>
 
-<span class="hw-top"> HELLO WORLD TOP </span>
+<span class="hw-top">Every living thing wants to survive</span>
