@@ -13,7 +13,11 @@ function IndexOptions() {
         padding: 16
       }}>
       <p>Times opened: {openCount}</p>
-      <input type={"checkbox"} readOnly checked={checked || false} />
+      <input
+        type={"checkbox"}
+        readOnly
+        checked={checked === undefined ? true : checked}
+      />
       <i>#{serialNumber || 0}</i>
     </div>
   )
