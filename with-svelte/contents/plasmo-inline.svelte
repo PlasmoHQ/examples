@@ -20,6 +20,12 @@
   }
 </script>
 
+<script>
+  let count = 0
+  let increment = () => count++
+</script>
+
 <div>
-  <button>A lie is a very poor way to say hello</button>
+  <span style="color: red;">{count}</span>
+  <button on:click={increment}>A lie is a very poor way to say hello</button>
 </div>

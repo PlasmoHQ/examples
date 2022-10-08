@@ -24,6 +24,11 @@ export default {
     getInlineAnchor,
     mountShadowHost
   },
+  data() {
+    return {
+      count: 0
+    }
+  },
   setup() {},
   mounted() {}
 }
@@ -31,6 +36,7 @@ export default {
 
 <template>
   <div>
-    <button>Many Myths are based on truth</button>
+    <span style="color: red">{{ count }}</span>
+    <button @click="count++">Many Myths are based on truth</button>
   </div>
 </template>
