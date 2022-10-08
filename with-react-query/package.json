@@ -13,7 +13,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.9.0",
+    "@tanstack/react-query": "4.10.3",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.197",
-    "@types/node": "18.8.1",
+    "@types/node": "18.8.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
