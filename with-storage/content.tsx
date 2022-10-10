@@ -24,7 +24,11 @@ const PlasmoOverlay = () => {
         padding: 12
       }}>
       <h1>HELLO WORLD ROOT CONTAINER</h1>
-      <input type={"checkbox"} readOnly checked={checked} />
+      <input
+        type={"checkbox"}
+        readOnly
+        checked={checked === undefined ? true : checked}
+      />
       <p>
         Open: {openCount}
         <i>#{serialNumber}</i>
