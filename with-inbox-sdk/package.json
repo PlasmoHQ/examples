@@ -9,16 +9,16 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@inboxsdk/core": "0.2.17",
+    "@inboxsdk/core": "0.2.20",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.197",
+    "@types/chrome": "0.0.198",
     "@types/inboxsdk": "2.0.9",
-    "@types/node": "18.8.3",
+    "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
