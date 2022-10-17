@@ -5,18 +5,16 @@ export const config: PlasmoContentScript = {
 }
 
 export const getOverlayAnchor: PlasmoGetOverlayAnchor = async () =>
-  document.querySelector<HTMLElement>("#pricing")
+  document.querySelector("#pricing")
 
-const PlasmoPricingExtra = () => {
-  return (
-    <span
-      style={{
-        background: "white",
-        padding: 12
-      }}>
-      HELLO WORLD
-    </span>
-  )
-}
+const PlasmoPricingExtra = () => (
+  <span
+    style={{
+      background: "white",
+      padding: 12
+    }}>
+    HELLO WORLD
+  </span>
+)
 
 export default PlasmoPricingExtra

@@ -8,9 +8,16 @@ export const config: PlasmoContentScript = {
 // Idea for static mount
 // Idea for styling injection support (inline or with custom emotion cache)
 
-export const getRootContainer = () => {
-  return document.querySelector("#feature")
-}
+export const getRootContainer = () =>
+  new Promise((resolve) => {
+    const checkInterval = setInterval(() => {
+      const rootContainer = document.getElementById("feature")
+      if (rootContainer) {
+        clearInterval(checkInterval)
+        resolve(rootContainer)
+      }
+    }, 137)
+  })
 
 const PlasmoOverlay = () => {
   return (
