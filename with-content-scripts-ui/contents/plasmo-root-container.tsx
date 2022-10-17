@@ -1,12 +1,9 @@
 import type { PlasmoContentScript } from "plasmo"
+import { createRoot } from "react-dom/client"
 
 export const config: PlasmoContentScript = {
   matches: ["https://www.plasmo.com/*"]
 }
-
-// Idea for an UI API, for popup, notification badge, or mounting UI
-// Idea for static mount
-// Idea for styling injection support (inline or with custom emotion cache)
 
 export const getRootContainer = () =>
   new Promise((resolve) => {
@@ -28,6 +25,12 @@ const PlasmoOverlay = () => {
       <h1>HELLO WORLD ROOT CONTAINER</h1>
     </span>
   )
+}
+
+export const render = async ({ createRootContainer }) => {
+  const rootContainer = await createRootContainer()
+  const root = createRoot(rootContainer)
+  root.render(<PlasmoOverlay />)
 }
 
 export default PlasmoOverlay
