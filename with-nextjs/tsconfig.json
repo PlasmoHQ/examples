@@ -1,7 +1,7 @@
 {
   "extends": "plasmo/templates/tsconfig.base",
   "exclude": ["node_modules"],
-  "include": [".plasmo/**/*", "next-env.d.ts", "./**/*.ts", "./**/*.tsx"],
+  "include": ["next-env.d.ts", "./**/*.ts", "./**/*.tsx"],
   "compilerOptions": {
     "paths": {
       "~*": ["./src/*"]
