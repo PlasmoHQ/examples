@@ -13,7 +13,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.13.0",
+    "@tanstack/react-query": "4.13.4",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
