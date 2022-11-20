@@ -1,14 +1,14 @@
 {
   "extensionName": {
-    "message": "with-18n",
+    "message": "with-locales",
     "description": "Name of the extension."
   },
   "extensionDescription": {
-    "message": "Example using i18n!",
+    "message": "Example using locales + i18n!",
     "description": "Description of the extension."
   },
   "popup": {
-    "message": "This is showing the power of i18n!",
+    "message": "Logic is the beginning of wisdom, not the end. - $PLASMO_PUBLIC_QUOTE_AUTHOR!",
     "description": "Popup message."
   }
 }

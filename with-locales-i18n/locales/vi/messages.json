@@ -1,14 +1,14 @@
 {
   "extensionName": {
-    "message": "with-18n",
+    "message": "with-locales",
     "description": "Name of the extension."
   },
   "extensionDescription": {
-    "message": "Ví dụ dùng i18n!",
+    "message": "Ví dụ dùng locales + i18n!",
     "description": "Description of the extension."
   },
   "popup": {
-    "message": "Tính năng của i18n!",
+    "message": "Lý luận là khởi đầu của trí tuệ, không phải là kết thúc.  - $PLASMO_PUBLIC_SERIAL_ID!",
     "description": "Popup message."
   }
 }

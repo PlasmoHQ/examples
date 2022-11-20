@@ -1,6 +1,6 @@
 {
-  "name": "with-locales",
-  "displayName": "With locales",
+  "name": "with-locales-i18n",
+  "displayName": "With locales i18n",
   "version": "0.0.0",
   "description": "__MSG_extensionDescription__",
   "author": "Plasmo Corp. <foss@plasmo.com>",
