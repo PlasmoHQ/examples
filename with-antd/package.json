@@ -1,10 +1,11 @@
 {
-  "name": "with-ant-design",
+  "name": "with-antd",
   "displayName": "With ant design",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
+    "louisgv",
     "coldsauce"
   ],
   "scripts": {
@@ -19,7 +20,6 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@testing-library/dom": "8.19.0",
     "@types/chrome": "0.0.202",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

@@ -1,6 +1,8 @@
 import { Button } from "antd"
-import cssText from "data-text:~/index.less"
+import antdResetCssText from "data-text:antd/dist/reset.css"
 import type { PlasmoContentScript } from "plasmo"
+
+import { ThemeProvider } from "~theme"
 
 export const config: PlasmoContentScript = {
   matches: ["https://www.plasmo.com/*"]
@@ -8,12 +10,16 @@ export const config: PlasmoContentScript = {
 
 export const getStyle = () => {
   const style = document.createElement("style")
-  style.textContent = cssText
+  style.textContent = antdResetCssText
   return style
 }
 
 const HelloWorldOverlay = () => {
-  return <Button type="primary">Hello World</Button>
+  return (
+    <ThemeProvider>
+      <Button type="primary">Engage</Button>
+    </ThemeProvider>
+  )
 }
 
 export default HelloWorldOverlay
