@@ -6,25 +6,26 @@
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build"
+    "build": "plasmo build",
+    "package": "plasmo package"
   },
   "dependencies": {
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.2.1"
+    "tailwindcss": "3.2.4"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.200",
-    "@types/node": "18.11.7",
-    "@types/react": "18.0.24",
-    "@types/react-dom": "18.0.8",
+    "@types/chrome": "0.0.202",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
     "autoprefixer": "10.4.13",
-    "postcss": "8.4.18",
+    "postcss": "8.4.19",
     "postcss-multiple-tailwind": "1.0.1",
     "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "typescript": "4.9.3"
   },
   "manifest": {
     "host_permissions": [
