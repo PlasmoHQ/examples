@@ -8,7 +8,7 @@ export const config: PlasmoContentScript = {
 export const getRootContainer = () =>
   new Promise((resolve) => {
     const checkInterval = setInterval(() => {
-      const rootContainer = document.getElementById("feature")
+      const rootContainer = document.getElementById("itero")
       if (rootContainer) {
         clearInterval(checkInterval)
         resolve(rootContainer)
@@ -20,9 +20,10 @@ const PlasmoOverlay = () => {
   return (
     <span
       style={{
+        background: "yellow",
         padding: 12
       }}>
-      <h1>HELLO WORLD ROOT CONTAINER</h1>
+      HELLO WORLD ROOT CONTAINER
     </span>
   )
 }
