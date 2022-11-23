@@ -17,8 +17,8 @@
     "build:next": "next build"
   },
   "dependencies": {
-    "plasmo": "workspace:*",
     "next": "13.0.4",
+    "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -29,7 +29,7 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
-    "prettier": "2.7.1",
+    "prettier": "2.8.0",
     "typescript": "4.9.3"
   },
   "manifest": {
