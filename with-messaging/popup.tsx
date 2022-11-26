@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useMessaging } from "@plasmohq/messaging/hook"
 
 function IndexPopup() {
-  const [data, setData] = useState("")
+  const sendTxMsg = useMessaging("send-transaction")
 
   return (
     <div
@@ -10,17 +10,17 @@ function IndexPopup() {
         flexDirection: "column",
         padding: 16
       }}>
-      <h2>
-        Welcome to your{" "}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
+      <button
+        onClick={async () => {
+          const resp = await sendTxMsg.send({
+            tx: "0x1234",
+            chainId: "Hello world"
+          })
+
+          console.log(resp)
+        }}>
+        Send TX
+      </button>
     </div>
   )
 }
