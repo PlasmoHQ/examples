@@ -1,7 +1,7 @@
 import { useMessaging } from "@plasmohq/messaging/hook"
 
 function IndexPopup() {
-  const sendTxMsg = useMessaging("send-transaction")
+  const messager = useMessaging()
 
   return (
     <div
@@ -12,7 +12,7 @@ function IndexPopup() {
       }}>
       <button
         onClick={async () => {
-          const resp = await sendTxMsg.send({
+          const resp = await messager.send("send-transaction", {
             tx: "0x1234",
             chainId: "Hello world"
           })

@@ -25,15 +25,17 @@ This repository showcases what's possible with the [Plasmo Framework](https://gi
 
 ## Getting Started
 
-The easiest way to get hacking on the Plasmo Framework is to run the `plasmo init` command!
+The easiest way to get hacking on the Plasmo Framework is to run the `create plasmo` command!
 
 ```sh
-pnpm dlx plasmo init
+pnpm create plasmo --with-<example-name>
 # OR npm v7
-npm x plasmo init
+npm create plasmo -- --with-<example-name>
 ```
 
-This will get you set up with a scaffolded project with everything you need to get started.
+For more detail, please read this documentation: https://docs.plasmo.com/workflows#with-an-example-template
+
+And see the discussion here for details on how to work with this example repository: https://discord.com/channels/946290204443025438/1044558522316234752
 
 ## Filing an issue to Request/Improve an Example
 
