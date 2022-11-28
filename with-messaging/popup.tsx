@@ -1,20 +1,12 @@
-import { useMessaging } from "@plasmohq/messaging/hook"
+import { sendToBackground } from "@plasmohq/messaging"
 
 function IndexPopup() {
-  const messager = useMessaging()
-
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
+    <div>
       <button
         onClick={async () => {
-          const resp = await messager.send("send-transaction", {
-            tx: "0x1234",
-            chainId: "Hello world"
+          const resp = await sendToBackground({
+            name: "send-transaction"
           })
 
           console.log(resp)

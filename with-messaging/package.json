@@ -5,18 +5,25 @@
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build",
+    "start": "next start",
+    "dev": "run-p dev:*",
+    "dev:plasmo": "plasmo dev",
+    "dev:next": "next dev --port 1947",
+    "build": "run-p build:*",
+    "build:plasmo": "plasmo build",
+    "build:next": "next build",
     "package": "plasmo package"
   },
   "dependencies": {
     "plasmo": "workspace:*",
     "@plasmohq/messaging": "workspace:*",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "next": "13.0.4"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@plasmohq/rps": "workspace:*",
     "@types/chrome": "0.0.202",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

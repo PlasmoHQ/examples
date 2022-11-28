@@ -25,6 +25,7 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/storage": "workspace:*",
+    "@plasmohq/rps": "workspace:*",
     "@types/chrome": "0.0.202",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
