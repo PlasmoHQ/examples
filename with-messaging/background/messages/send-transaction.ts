@@ -1,11 +1,7 @@
 import type { PlasmoMessaging } from "@plasmohq/messaging"
 
-export const handler: PlasmoMessaging.Handler = async (
-  request,
-  sender,
-  sendResponse
-) => {
-  console.log(request)
+export const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
+  console.log(req)
 
-  sendResponse("HELLO WORLD")
+  res.send("HELLO WORLD")
 }
