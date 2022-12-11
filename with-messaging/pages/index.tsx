@@ -1,4 +1,4 @@
-import { sendThroughRelay } from "@plasmohq/messaging"
+import { sendViaRelay } from "@plasmohq/messaging"
 
 function IndexPage() {
   // This is the same as the `useEffect` hook in React
@@ -7,7 +7,7 @@ function IndexPage() {
     <div>
       <button
         onClick={async () => {
-          const hydrated = await sendThroughRelay({
+          const hydrated = await sendViaRelay({
             name: "hydrate-options"
           })
 
