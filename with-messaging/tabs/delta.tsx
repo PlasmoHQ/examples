@@ -1,18 +1,26 @@
 import { usePort } from "@plasmohq/messaging/hook"
 
+type RequestBody = {
+  hello: string
+}
+
+type ResponseBody = {
+  message: string
+}
+
 function DeltaTab() {
-  const mailPort = usePort("mail")
+  const mailPort = usePort<RequestBody, ResponseBody>("mail")
 
   return (
     <div>
-      {mailPort.data}
+      {mailPort.data?.message}
       <button
         onClick={async () => {
           mailPort.send({
             hello: "world"
           })
         }}>
-        Send Port message TX
+        Send Port
       </button>
     </div>
   )
