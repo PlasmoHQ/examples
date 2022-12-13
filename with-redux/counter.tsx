@@ -1,10 +1,11 @@
-import { useDispatch, useSelector } from "react-redux"
-
-import { CounterState, decrement, increment } from "~counter-slice"
+import { decrement, increment } from "~counter-slice"
+import { useAppDispatch, useAppSelector } from "~store"
 
 export const CounterView = () => {
-  const dispatch = useDispatch()
-  const value = useSelector((state: CounterState) => state.count)
+  const dispatch = useAppDispatch()
+
+  // Make sure to use "useAppSelector" instead of "useSelector" to automatically get the correct types
+  const value = useAppSelector((state) => state.counter.count)
 
   return (
     <div>
