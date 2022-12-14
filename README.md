@@ -33,7 +33,7 @@ pnpm create plasmo --with-<example-name>
 npm create plasmo -- --with-<example-name>
 ```
 
-For more detail, please read this documentation: https://docs.plasmo.com/workflows#with-an-example-template
+For more detail, please read this documentation: https://docs.plasmo.com/framework/workflows#with-an-example-template
 
 And see the discussion here for details on how to work with this example repository: https://discord.com/channels/946290204443025438/1044558522316234752
 

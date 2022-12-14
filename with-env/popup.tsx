@@ -17,9 +17,7 @@ function IndexPopup() {
         flexDirection: "column",
         padding: 16
       }}>
-      <a
-        target="_blank"
-        href="https://docs.plasmo.com/workflows#adding-environment-variables">
+      <a target="_blank" href="https://docs.plasmo.com/framework/env">
         with-env example extension
       </a>
       <p>Ship name: {process.env.PLASMO_PUBLIC_SHIP_NAME}</p>
