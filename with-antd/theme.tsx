@@ -1,6 +1,5 @@
 import { ConfigProvider } from "antd"
 import type { ReactNode } from "react"
-import { StyleProvider } from "@ant-design/cssinjs";
 
 export const ThemeProvider = ({ children = null as ReactNode }) => (
   <ConfigProvider
@@ -9,8 +8,6 @@ export const ThemeProvider = ({ children = null as ReactNode }) => (
         colorPrimary: "#a1701d"
       }
     }}>
-      <StyleProvider container={document.querySelector("plasmo-csui").shadowRoot}>
-        {children}
-      </StyleProvider>
+    {children}
   </ConfigProvider>
 )
