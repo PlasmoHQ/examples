@@ -10,13 +10,10 @@ export const config: PlasmoContentScript = {
 }
 
 const getInlineAnchor: PlasmoGetInlineAnchor = () =>
-  document.querySelector("#supercharge > h2 > span")
+  document.querySelector("#supercharge > h3 > span")
 
-const mountShadowHost: PlasmoMountShadowHost = ({
-  inlineAnchor,
-  shadowHost
-}) => {
-  inlineAnchor!.insertBefore(shadowHost!, inlineAnchor!.firstChild)
+const mountShadowHost: PlasmoMountShadowHost = ({ anchor, shadowHost }) => {
+  anchor!.element!.insertBefore(shadowHost!, anchor!.element!.firstChild)
 }
 
 export default {
