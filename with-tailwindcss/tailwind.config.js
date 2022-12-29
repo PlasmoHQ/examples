@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
   darkMode: "class",
-  content: ["./**/*.{ts,tsx}"],
+  content: ["./**/*.tsx"],
   theme: {
     fontFamily: {
       sans: ["Inter", "sans-serif"],
