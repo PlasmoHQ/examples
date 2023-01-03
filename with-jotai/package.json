@@ -10,7 +10,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "jotai": "1.12.0",
+    "jotai": "1.12.1",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"

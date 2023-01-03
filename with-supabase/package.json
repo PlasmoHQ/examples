@@ -13,7 +13,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.2.2",
+    "@supabase/supabase-js": "2.2.3",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
