@@ -13,8 +13,6 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@tailwindcss/forms": "0.5.3",
-    "@tailwindcss/typography": "0.5.8",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",

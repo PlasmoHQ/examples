@@ -1,8 +1,20 @@
+import cssText from "data-text:~style.css"
+import type { PlasmoContentScript } from "plasmo"
 import { useReducer } from "react"
 
-import "./style.css"
+import "~base.css"
 
-function IndexPopup() {
+export const config: PlasmoContentScript = {
+  matches: ["https://www.plasmo.com/*"]
+}
+
+export const getStyle = () => {
+  const style = document.createElement("style")
+  style.textContent = cssText
+  return style
+}
+
+const PlasmoOverlay = () => {
   const [count, increase] = useReducer((c) => c + 1, 0)
 
   return (
@@ -25,4 +37,4 @@ function IndexPopup() {
   )
 }
 
-export default IndexPopup
+export default PlasmoOverlay
