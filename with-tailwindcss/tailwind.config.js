@@ -2,5 +2,5 @@
 module.exports = {
   content: ["./src/**/*.{tsx,html}"],
   darkMode: "media",
-  plugins: []
+  plugins: [require("windy-radix-palette")]
 }
