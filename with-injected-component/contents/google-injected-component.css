@@ -1,0 +1,15 @@
+.injected-component-container {
+  background-color: #1b141d;
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.plasmo-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
