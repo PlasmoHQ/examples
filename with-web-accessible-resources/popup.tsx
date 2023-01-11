@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Logo from "react:~assets/logo.svg"
 
 const srcList = Array.from({
   length: 3
@@ -21,6 +22,7 @@ function IndexPopup() {
       <h1>
         Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
       </h1>
+      <Logo />
       <div
         style={{
           display: "flex"
