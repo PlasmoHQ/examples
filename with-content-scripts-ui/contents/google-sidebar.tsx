@@ -1,47 +1,40 @@
-import plasmoLogo from "data-base64:~assets/icon.png"
+import iconBase64 from "data-base64:~assets/icon.png"
 import cssText from "data-text:~/contents/google-sidebar.css"
-import type {
-  PlasmoContentScript,
-  PlasmoGetInlineAnchor,
-  PlasmoMountShadowHost
-} from "plasmo"
+import type { PlasmoContentScript } from "plasmo"
+import { useEffect, useState } from "react"
+
+// Inject to the webpage itself
+import "./google-sidebar-base.css"
 
 export const config: PlasmoContentScript = {
   matches: ["https://www.google.com/*"]
 }
+
+// Inject into the ShadowDOM
 export const getStyle = () => {
   const style = document.createElement("style")
   style.textContent = cssText
   return style
 }
+
 export const getShadowHostId = () => "plasmo-google-sidebar"
 
-const bodyWidthStyle = document.createElement("style")
-bodyWidthStyle.setAttribute("id", "injected-bodyWidthStyle")
-bodyWidthStyle.textContent = "body{max-width: calc(100% - 400px)}"
-document.body.appendChild(bodyWidthStyle)
+const GoogleSidebar = () => {
+  const [isOpen, setIsOpen] = useState(true)
 
-const documentBody = document.querySelector("body")
+  useEffect(() => {
+    document.body.classList.toggle("plasmo-google-sidebar-show", isOpen)
+  }, [isOpen])
 
-export const getInlineAnchor: PlasmoGetInlineAnchor = async () => documentBody
-
-export const mountShadowHost: PlasmoMountShadowHost = ({
-  shadowHost,
-  anchor
-}) => {
-  anchor.element.appendChild(shadowHost)
-  shadowHost.setAttribute("style", "position: absolute; top: 0; right: 0")
-}
-
-const GoogleSideBar = () => {
   return (
-    <div className="injected-component-container">
-      <img src={plasmoLogo} />
-      <p className="plasmo-text">
-        The Easiest Way to Build, Test, and Ship browser extensions
-      </p>
+    <div id="sidebar" className={isOpen ? "open" : "closed"}>
+      <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? "🟡 Close" : "🟣 Open"}
+      </button>
+      <img src={iconBase64} alt="Extension Icon" width={128} height={128} />
+      <p>The Easiest Way to Build, Test, and Ship browser extensions</p>
     </div>
   )
 }
 
-export default GoogleSideBar
+export default GoogleSidebar
