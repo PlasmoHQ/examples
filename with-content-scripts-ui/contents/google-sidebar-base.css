@@ -1,0 +1,16 @@
+:root,
+#plasmo-google-sidebar:host {
+  --plasmo-google-sidebar-width: 420px;
+}
+
+body.plasmo-google-sidebar-show,
+body.plasmo-google-sidebar-show * {
+  max-width: calc(100vw - var(--plasmo-google-sidebar-width));
+}
+
+#plasmo-google-sidebar {
+  position: fixed;
+  z-index: 240;
+  top: 0px;
+  right: 0px;
+}
