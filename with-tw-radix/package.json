@@ -18,16 +18,16 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@radix-ui/colors": "0.1.8",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.206",
+    "@radix-ui/colors": "0.1.8",
+    "@types/chrome": "0.0.208",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
     "postcss": "8.4.21",
-    "prettier": "2.8.1",
-    "typescript": "4.9.4",
+    "prettier": "2.8.2",
     "tailwindcss": "3.2.4",
+    "typescript": "4.9.4",
     "windy-radix-palette": "0.4.1"
   },
   "manifest": {

@@ -1,5 +1,5 @@
-import plasmoLogo from "data-base64:~assets/plasmo-logo.png"
-import cssText from "data-text:~/contents/google-injected-component.css"
+import plasmoLogo from "data-base64:~assets/icon.png"
+import cssText from "data-text:~/contents/google-sidebar.css"
 import type {
   PlasmoContentScript,
   PlasmoGetInlineAnchor,
@@ -7,14 +7,14 @@ import type {
 } from "plasmo"
 
 export const config: PlasmoContentScript = {
-  matches: ["https://www.google.com/"]
+  matches: ["https://www.google.com/*"]
 }
 export const getStyle = () => {
   const style = document.createElement("style")
   style.textContent = cssText
   return style
 }
-export const getShadowHostId = () => "plasmo-injected-component-example"
+export const getShadowHostId = () => "plasmo-google-sidebar"
 
 const bodyWidthStyle = document.createElement("style")
 bodyWidthStyle.setAttribute("id", "injected-bodyWidthStyle")
@@ -33,7 +33,7 @@ export const mountShadowHost: PlasmoMountShadowHost = ({
   shadowHost.setAttribute("style", "position: absolute; top: 0; right: 0")
 }
 
-const GoogleInjectedComponent = () => {
+const GoogleSideBar = () => {
   return (
     <div className="injected-component-container">
       <img src={plasmoLogo} />
@@ -44,4 +44,4 @@ const GoogleInjectedComponent = () => {
   )
 }
 
-export default GoogleInjectedComponent
+export default GoogleSideBar

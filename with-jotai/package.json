@@ -10,18 +10,18 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "jotai": "1.12.1",
+    "jotai": "1.13.0",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.206",
+    "@types/chrome": "0.0.208",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-    "prettier": "2.8.1",
+    "prettier": "2.8.2",
     "typescript": "4.9.4"
   },
   "manifest": {

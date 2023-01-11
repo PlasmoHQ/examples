@@ -1,9 +1,12 @@
 {
-  "name": "with-injected-components",
-  "displayName": "With injected components",
+  "name": "with-main-world-content-script-injection",
+  "displayName": "With main world content script injection",
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "coldsauce"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
@@ -16,19 +19,19 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.202",
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.9",
-    "prettier": "2.7.1",
-    "typescript": "4.9.3"
+    "@types/chrome": "0.0.208",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "prettier": "2.8.2",
+    "typescript": "4.9.4"
   },
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "scripting"
     ]
-  },
-  "contributors": [
-    "vinne"
-  ]
+  }
 }
