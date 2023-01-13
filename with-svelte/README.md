@@ -2,7 +2,9 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 ## Getting Started
 
-First, run the development server:
+First, make sure to replace `type="ts"` with `lang="ts"` in your Svelte components.
+
+Second, run the development server:
 
 ```bash
 pnpm dev
