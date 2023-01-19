@@ -10,7 +10,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@inboxsdk/core": "0.2.26",
+    "@inboxsdk/core": "0.2.27",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
