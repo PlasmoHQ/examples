@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@plasmohq/storage": "workspace:*",
-    "firebase": "9.15.0",
+    "firebase": "9.16.0",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"

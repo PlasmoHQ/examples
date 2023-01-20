@@ -13,7 +13,7 @@
     "build": "plasmo build"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "1.5.1",
+    "@ant-design/cssinjs": "1.5.6",
     "antd": "5.1.5",
     "plasmo": "workspace:*",
     "react": "18.2.0",
