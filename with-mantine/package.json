@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "crashmax-dev"
+  ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
@@ -30,9 +33,5 @@
     "host_permissions": [
       "https://*/*"
     ]
-  },
-  "contributors": [
-    "lgvic",
-    "crashmax-dev"
-  ]
+  }
 }
