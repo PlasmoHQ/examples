@@ -1,0 +1,38 @@
+{
+  "name": "with-mantine",
+  "displayName": "With Mantine",
+  "version": "0.0.0",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.5",
+    "@mantine/core": "5.10.1",
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.12",
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@types/chrome": "0.0.209",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "prettier": "2.8.3",
+    "typescript": "4.9.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  },
+  "contributors": [
+    "lgvic",
+    "crashmax-dev"
+  ]
+}
