@@ -6,7 +6,7 @@ interface Props extends PropsWithChildren {
   emotionCache?: EmotionCache
 }
 
-export const ThemeProvider = ({ emotionCache, children }: Props) => {
+export function ThemeProvider({ emotionCache, children }: Props) {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS emotionCache={emotionCache}>
       {children}

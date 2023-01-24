@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { createEmotionCache } from '@mantine/core'
-import { Stack, Button, Anchor, Text, Input } from '@mantine/core'
+import { createEmotionCache, Stack, Button, Anchor, Text, Input } from '@mantine/core'
 import { ThemeProvider } from "~theme"
 
 const styleElement = document.createElement("style")
@@ -27,7 +26,7 @@ function PlasmoOverlay() {
           Extension!
         </Text>
         <Input onChange={(e) => setData(e.target.value)} value={data} />
-        <Button component="a" href="https://docs.plasmo.com" target="_blank" >
+        <Button component="a" href="https://docs.plasmo.com" target="_blank">
           View Docs
         </Button>
       </Stack>
