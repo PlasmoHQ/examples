@@ -1,7 +1,7 @@
 {
   "name": "with-jotai",
   "displayName": "With jotai",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Plasmo extension which uses jotai library for state management",
   "author": "yashwadhia",
   "scripts": {

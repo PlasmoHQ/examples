@@ -1,7 +1,7 @@
 {
   "name": "with-content-scripts-ui",
   "displayName": "With content scripts ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This example demonstrates how to render a React component using content scripts",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
