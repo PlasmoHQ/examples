@@ -1,7 +1,7 @@
 {
   "name": "with-react-query",
   "displayName": "With react query",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Plasmo extension using react-query example",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [

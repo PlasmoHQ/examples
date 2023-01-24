@@ -1,7 +1,7 @@
 {
   "name": "with-firebase",
   "displayName": "Firebase Plasmo example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Showcasing how easy it is to have auth with Plasmo.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [

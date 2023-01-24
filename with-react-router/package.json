@@ -1,7 +1,7 @@
 {
   "name": "with-react-router",
   "displayName": "With react router",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A basic Plasmo extension.",
   "author": "yashwadhia",
   "scripts": {
