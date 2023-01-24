@@ -5,7 +5,8 @@
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "crashmax-dev"
+    "crashmax-dev",
+    "louisgv"
   ],
   "scripts": {
     "dev": "plasmo dev",
@@ -15,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "11.10.5",
     "@mantine/core": "5.10.1",
+    "@mantine/hooks": "5.10.1",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"

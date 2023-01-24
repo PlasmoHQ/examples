@@ -1,6 +1,7 @@
-import { Stack, Button, Anchor, Text, Input } from '@mantine/core'
+import { Anchor, Button, Input, Stack, Text } from "@mantine/core"
 import { useState } from "react"
-import { ThemeProvider } from '~theme'
+
+import { ThemeProvider } from "~theme"
 
 function IndexPopup() {
   const [data, setData] = useState("")

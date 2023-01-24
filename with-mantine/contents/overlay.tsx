@@ -1,6 +1,19 @@
+import {
+  Anchor,
+  Button,
+  Input,
+  Stack,
+  Text,
+  createEmotionCache
+} from "@mantine/core"
+import type { PlasmoContentScript } from "plasmo"
 import { useState } from "react"
-import { createEmotionCache, Stack, Button, Anchor, Text, Input } from '@mantine/core'
+
 import { ThemeProvider } from "~theme"
+
+export const config: PlasmoContentScript = {
+  matches: ["https://www.plasmo.com/*"]
+}
 
 const styleElement = document.createElement("style")
 
