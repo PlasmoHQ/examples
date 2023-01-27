@@ -1,7 +1,16 @@
-import { useFirebase } from "~firebase/hook"
+import { getDoc } from "firebase/firestore"
+import { useEffect, useReducer } from "react"
 
-export default function IndexPopup() {
-  const { user, isLoading, onLogin, onLogout } = useFirebase()
+import { useFirebase } from "~firebase/hook"
+import { useFirestoreDoc } from "~firebase/use-firestore-doc"
+
+export default function IndexNewtab() {
+  const { user, firestore, isLoading, onLogin, onLogout } = useFirebase()
+
+  // Create a test collection, with a hello document:
+  const { data: enterpriseData, setData } = useFirestoreDoc<{
+    serial: string
+  }>("starships/enterprise")
 
   return (
     <div
@@ -29,6 +38,15 @@ export default function IndexPopup() {
           ""
         )}
       </div>
+      <h2>Ship serial number:</h2>
+      <input
+        value={enterpriseData?.serial || ""}
+        onChange={(e) =>
+          setData({
+            serial: e.target.value
+          })
+        }
+      />
     </div>
   )
 }
