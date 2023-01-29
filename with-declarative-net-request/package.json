@@ -1,0 +1,43 @@
+{
+  "name": "with-dnr",
+  "displayName": "With declarative net request",
+  "version": "0.0.1",
+  "description": "Using DelcarativeNetRequest rules",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "afk",
+    "louisgv"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build"
+  },
+  "dependencies": {
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@types/chrome": "0.0.209",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "prettier": "2.8.3",
+    "typescript": "4.9.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "~rules/test.json"
+        }
+      ]
+    }
+  }
+}
