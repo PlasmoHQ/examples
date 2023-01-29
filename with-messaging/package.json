@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@plasmohq/messaging": "workspace:*",
-    "next": "13.1.3",
+    "next": "13.1.6",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
-    "@types/chrome": "0.0.209",
+    "@types/chrome": "0.0.210",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",

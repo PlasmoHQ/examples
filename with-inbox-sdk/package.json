@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.209",
+    "@types/chrome": "0.0.210",
     "@types/inboxsdk": "2.0.9",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",

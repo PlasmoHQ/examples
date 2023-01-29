@@ -10,19 +10,16 @@
   ],
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build"
+    "build": "plasmo build",
+    "package": "plasmo package"
   },
   "dependencies": {
-    "plasmo": "workspace:*",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "plasmo": "workspace:*"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.209",
+    "@types/chrome": "0.0.210",
     "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
     "prettier": "2.8.3",
     "typescript": "4.9.4"
   },
