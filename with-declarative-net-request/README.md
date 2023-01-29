@@ -2,6 +2,8 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 ## Getting Started
 
+For more about rules, see: https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#rules
+
 First, run the development server:
 
 ```bash

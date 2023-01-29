@@ -5,20 +5,20 @@
   "description": "Using DelcarativeNetRequest rules",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "lgvic",
-    "afk"
+    "afk",
+    "louisgv"
   ],
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {
-    "plasmo": "0.62.2",
+    "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "3.6.1",
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@types/chrome": "0.0.209",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
@@ -35,7 +35,7 @@
         {
           "id": "ruleset_1",
           "enabled": true,
-          "path": "~rulesets/test.json"
+          "path": "~rules/test.json"
         }
       ]
     }
