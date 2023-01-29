@@ -1,7 +1,7 @@
 import * as InboxSDK from "@inboxsdk/core"
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://mail.google.com/*"],
   run_at: "document_end"
 }

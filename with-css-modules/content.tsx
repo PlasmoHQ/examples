@@ -1,9 +1,9 @@
 import styleText from "data-text:./style.module.css"
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 
 import * as style from "./style.module.css"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

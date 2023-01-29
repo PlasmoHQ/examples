@@ -1,11 +1,11 @@
 import { StyleProvider } from "@ant-design/cssinjs"
 import { Button } from "antd"
 import antdResetCssText from "data-text:antd/dist/reset.css"
-import type { PlasmoContentScript, PlasmoGetShadowHostId } from "plasmo"
+import type { PlasmoCSConfig, PlasmoGetShadowHostId } from "plasmo"
 
 import { ThemeProvider } from "~theme"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

@@ -1,8 +1,8 @@
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 
 import { relay } from "@plasmohq/messaging"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["http://localhost:1947/*"]
 }
 

@@ -6,12 +6,12 @@ import {
   Text,
   createEmotionCache
 } from "@mantine/core"
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 import { useState } from "react"
 
 import { ThemeProvider } from "~theme"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

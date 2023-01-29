@@ -1,12 +1,12 @@
 import iconBase64 from "data-base64:~assets/icon.png"
 import cssText from "data-text:~/contents/google-sidebar.css"
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 import { useEffect, useState } from "react"
 
 // Inject to the webpage itself
 import "./google-sidebar-base.css"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.google.com/*"]
 }
 

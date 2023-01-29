@@ -3,8 +3,8 @@
 
 import { Button, createEmotionCache } from "@mantine/core"
 import type {
+  PlasmoCSConfig,
   PlasmoCSUIProps,
-  PlasmoContentScript,
   PlasmoGetInlineAnchorList
 } from "plasmo"
 import type { FC } from "react"
@@ -13,7 +13,7 @@ import { ThemeProvider } from "~theme"
 
 export const getStyle = () => document.createElement("style")
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

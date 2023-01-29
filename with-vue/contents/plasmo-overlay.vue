@@ -6,9 +6,9 @@
 
 <script lang="ts">
 import cssText from "data-text:~/contents/plasmo-overlay.css"
-import type { PlasmoContentScript, PlasmoGetStyle } from "plasmo"
+import type { PlasmoCSConfig, PlasmoGetStyle } from "plasmo"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

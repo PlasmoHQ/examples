@@ -1,11 +1,11 @@
 <script lang="ts">
 import type {
-  PlasmoContentScript,
+  PlasmoCSConfig,
   PlasmoGetInlineAnchor,
   PlasmoMountShadowHost
 } from "plasmo"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 

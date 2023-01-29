@@ -1,11 +1,11 @@
 import cssText from "data-text:~style.css"
-import type { PlasmoContentScript } from "plasmo"
+import type { PlasmoCSConfig } from "plasmo"
 
 import { CountButton } from "~features/count-button"
 
 import "~base.css"
 
-export const config: PlasmoContentScript = {
+export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 
