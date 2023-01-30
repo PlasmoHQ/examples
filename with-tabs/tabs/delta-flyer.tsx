@@ -1,4 +1,4 @@
-function DeltaFlyerPage() {
+export default function DeltaFlyerPage() {
   return (
     <div
       style={{
@@ -12,5 +12,3 @@ function DeltaFlyerPage() {
     </div>
   )
 }
- 
-export default DeltaFlyerPage
