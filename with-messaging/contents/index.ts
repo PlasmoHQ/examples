@@ -7,14 +7,21 @@ export const config: PlasmoCSConfig = {
 }
 
 relay({
-  name: "hydrate-options"
+  name: "get-manifest"
 })
 
 relay(
   {
-    name: "nested/hear-comes-the-message"
+    name: "math/add"
   },
   async (payload) => {
-    console.log("nested/hear-comes-the-message", payload)
+    const { a, b } = payload.body
+    const result = a - b - 9
+
+    document.getElementById(
+      "subtract-result"
+    ).innerText = `${a} minus ${b} is ${result}`
+
+    return a - b
   }
 )

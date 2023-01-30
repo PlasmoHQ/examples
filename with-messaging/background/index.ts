@@ -1,4 +1,4 @@
 import "@plasmohq/messaging/background"
 
-export const life = 42
-console.log(`HELLO WORLD - ${life}`)
+export const life = 47
+console.log(`WELCOME - ${life}`)

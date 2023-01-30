@@ -1,11 +1,15 @@
 import type { PlasmoMessaging } from "@plasmohq/messaging"
 
-const handler: PlasmoMessaging.PortHandler = async (req, res) => {
-  console.log(req)
+const SECRET = "LABARRE"
 
-  res.send({
-    message: "Hello from port handler"
-  })
+const handler: PlasmoMessaging.PortHandler = async (req, res) => {
+  const { password } = req.body
+
+  if (password !== SECRET) {
+    res.send("(HINT: HOMETOWN)")
+  } else {
+    res.send("CAPTAIN")
+  }
 }
 
 export default handler

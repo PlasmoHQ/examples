@@ -1,11 +1,11 @@
 import type { PlasmoMessaging } from "@plasmohq/messaging"
 
-const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
-  console.log(req)
+const HIDDEN_NUMBER = 541
 
-  res.send({
-    message: "Hello from background"
-  })
+const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
+  const { input } = req.body
+
+  res.send(input * HIDDEN_NUMBER)
 }
 
 export default handler
