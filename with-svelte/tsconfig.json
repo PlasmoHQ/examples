@@ -1,10 +1,18 @@
 {
   "extends": "plasmo/templates/tsconfig.base",
-  "exclude": ["node_modules"],
-  "include": ["./**/*.ts", "./**/*.svelte"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.svelte"
+  ],
   "compilerOptions": {
     "paths": {
-      "~*": ["./*"]
+      "~*": [
+        "./*"
+      ]
     },
     "baseUrl": "."
   }

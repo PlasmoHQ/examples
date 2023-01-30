@@ -1,11 +1,23 @@
 {
   "extends": "plasmo/templates/tsconfig.base",
-  "exclude": ["node_modules"],
-  "include": ["./**/*.ts", "./**/*.tsx"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx"
+  ],
   "compilerOptions": {
-    "lib": ["WebWorker", "dom", "WebWorker.ImportScripts"],
+    "lib": [
+      "WebWorker",
+      "dom",
+      "WebWorker.ImportScripts"
+    ],
     "paths": {
-      "~*": ["./*"]
+      "~*": [
+        "./*"
+      ]
     },
     "baseUrl": "."
   }
