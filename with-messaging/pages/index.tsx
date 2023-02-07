@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { sendViaRelay } from "@plasmohq/messaging"
+import { sendToBackgroundViaRelay } from "@plasmohq/messaging"
 
 function IndexPage() {
   const [manifestData, setManifestData] = useState()
@@ -25,7 +25,7 @@ function IndexPage() {
         />{" "}
         <button
           onClick={async () => {
-            const resp = await sendViaRelay({
+            const resp = await sendToBackgroundViaRelay({
               name: "math/add",
               body: {
                 a,
@@ -43,7 +43,7 @@ function IndexPage() {
 
       <button
         onClick={async () => {
-          const resp = await sendViaRelay({
+          const resp = await sendToBackgroundViaRelay({
             name: "get-manifest"
           })
           setManifestData(resp)

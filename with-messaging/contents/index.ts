@@ -1,27 +1,29 @@
 import type { PlasmoCSConfig } from "plasmo"
 
-import { relay } from "@plasmohq/messaging"
+import { relayMessage, sendToBackground } from "@plasmohq/messaging"
+import { relay } from "@plasmohq/messaging/relay"
 
 export const config: PlasmoCSConfig = {
   matches: ["http://localhost:1947/*"]
 }
 
-relay({
+relayMessage({
   name: "get-manifest"
 })
 
 relay(
   {
-    name: "math/add"
+    name: "math/add" as const
   },
-  async (payload) => {
-    const { a, b } = payload.body
-    const result = a - b - 9
+  async (req) => {
+    const { a, b } = req.body
+    const minusResult = a - b - 9
 
     document.getElementById(
       "subtract-result"
-    ).innerText = `${a} minus ${b} is ${result}`
+    ).innerText = `${a} minus ${b} is ${minusResult}`
 
-    return a - b
+    const addResult = await sendToBackground(req)
+    return addResult
   }
 )
