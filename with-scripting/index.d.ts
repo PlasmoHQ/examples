@@ -3,4 +3,6 @@ interface Window {
     world: string
     coolNumber: number
   }
+
+  mainMessage: string
 }

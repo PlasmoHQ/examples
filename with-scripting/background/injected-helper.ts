@@ -1,4 +1,4 @@
-const windowChanger = (): void => {
+export default function windowChanger() {
   const anotherFunc = (): number => {
     return 42
   }
@@ -18,5 +18,3 @@ const windowChanger = (): void => {
   // This console.log will show within the tab you injected into
   console.log(document.getElementsByTagName("html"))
 }
-
-export default windowChanger

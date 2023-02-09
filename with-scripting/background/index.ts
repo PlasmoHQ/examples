@@ -1,6 +1,6 @@
 import windowChanger from "./injected-helper"
 
-const inject = async (tabId) => {
+const inject = async (tabId: number) => {
   chrome.scripting.executeScript(
     {
       target: {
