@@ -1,23 +1,25 @@
-import { getDoc } from "firebase/firestore"
-import { useEffect, useReducer } from "react"
-
 import { useFirebase } from "~firebase/hook"
 import { useFirestoreDoc } from "~firebase/use-firestore-doc"
 
 export default function IndexNewtab() {
-  const { user, firestore, isLoading, onLogin, onLogout } = useFirebase()
+  const { user, isLoading, onLogin, onLogout } = useFirebase()
 
   // Create a test collection, with a hello document:
   const { data: enterpriseData, setData } = useFirestoreDoc<{
     serial: string
   }>("starships/enterprise")
 
+  const { data: crewData, setData: setCrewData } = useFirestoreDoc<{
+    name: string
+  }>(user?.uid && `crews/${user.uid}`)
+
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        padding: 16
+        padding: 16,
+        gap: 4
       }}>
       <h1>
         Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
@@ -47,6 +49,19 @@ export default function IndexNewtab() {
           })
         }
       />
+
+      <br />
+      <h3>Crew name:</h3>
+      <input
+        value={crewData?.name || ""}
+        onChange={(e) =>
+          setCrewData({
+            name: e.target.value
+          })
+        }
+      />
+
+      <footer>Crafted by @PlamoHQ</footer>
     </div>
   )
 }
