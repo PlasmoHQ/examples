@@ -14,7 +14,7 @@ const main = async () => {
 
   const foo = await storage.get(TEST_KEY)
 
-  assert(foo === TEST_DATA, "ENCRYPTED FAILED")
+  assert(foo === TEST_DATA, "ENCRYPTION FAILED")
 
   console.log(await storage.getAll())
 
