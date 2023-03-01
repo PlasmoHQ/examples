@@ -1,6 +1,10 @@
+import type { PlasmoCSConfig, PlasmoGetInlineAnchor } from "plasmo"
+
 import { querySelector } from "@plasmohq/selector"
 
-import type { PlasmoGetInlineAnchor } from "~../../cli/plasmo/dist/type"
+export const config: PlasmoCSConfig = {
+  matches: ["https://plasmo.com/*"]
+}
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = () => {
   const anchor = querySelector(".bruh bruh rbuhuh h1")
