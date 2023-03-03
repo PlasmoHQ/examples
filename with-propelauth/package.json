@@ -1,0 +1,34 @@
+{
+  "name": "with-propelauth",
+  "displayName": "With PropelAuth",
+  "version": "0.0.1",
+  "description": "A Plasmo example with PropelAuth",
+  "author": "andrew <support@propelauth.com>",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "^0.1.2",
+    "@propelauth/javascript": "^2.0.3",
+    "@propelauth/react": "^2.0.4",
+    "plasmo": "0.65.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@types/chrome": "0.0.210",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "prettier": "2.8.3",
+    "typescript": "4.9.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
