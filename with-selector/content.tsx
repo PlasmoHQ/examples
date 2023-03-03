@@ -3,7 +3,7 @@ import type { PlasmoCSConfig, PlasmoGetInlineAnchor } from "plasmo"
 import { querySelector } from "@plasmohq/selector"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://plasmo.com/*"]
+  matches: ["https://www.plasmo.com/*"]
 }
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = () => {
