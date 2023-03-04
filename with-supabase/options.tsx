@@ -15,27 +15,23 @@ function IndexOptions() {
     password: string
   ) => {
     try {
-      const { error, user: signedInUser } =
+      const {
+        error,
+        data: { user, session }
+      } =
         type === "LOGIN"
-          ? await supabase.auth.signIn(
-              { email: username, password },
-              {
-                redirectTo: window.location.href
-              }
-            )
-          : await supabase.auth.signUp(
-              { email: username, password },
-              {
-                redirectTo: window.location.href
-              }
-            )
+          ? await supabase.auth.signInWithPassword({
+              email: username,
+              password
+            })
+          : await supabase.auth.signUp({ email: username, password })
 
       if (error) {
         alert("Error with auth: " + error.message)
-      } else if (!signedInUser) {
+      } else if (!user) {
         alert("Signup successful, confirmation mail should be sent soon!")
       } else {
-        setUser(signedInUser)
+        setUser(user)
       }
     } catch (error) {
       console.log("error", error)
