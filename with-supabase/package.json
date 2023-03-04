@@ -30,6 +30,20 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnf/qbAua8w6GLK6LRgoAYro1poG3MeppB6KlD735AeEuaFm58ITP31xGGW/2unltxMk93A84Bbrg4hZDUk60SkP2RnYCh9ZLDLrQFlv/eXl9Ieyd14/iUPO4VFvJiF9lPJ7CCOqN0/YbBUnekxh36kw+n+7sIvjtcLCifALYAzEQSru2Km2/mgVJhgdoN/f82d3jKiGC8bsy8usAg/efnUik/xXLyedcv2BidvHavrp6AKuv9eiubvhe3ImAnYjsWovyT6vbi6cAH64CSd+GUGIeDzEGQ709BMlmlzDcy5tU9uSkbNMcaY/RzlVZHbr0WoyCBCoUbN9UxfYFEXk7VQIDAQAB",
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "options.html"
+        ],
+        "matches": [
+          "<all_urls>"
+        ],
+        "extension_ids": [
+          "mklammglbigdnipnbhehfnlijjplogho"
+        ]
+      }
     ]
   }
 }
