@@ -10,21 +10,21 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@plasmohq/messaging": "^0.1.2",
-    "@propelauth/javascript": "^2.0.3",
-    "@propelauth/react": "^2.0.4",
-    "plasmo": "0.65.0",
+    "@plasmohq/messaging": "workspace:*",
+    "@propelauth/javascript": "2.0.4",
+    "@propelauth/react": "2.0.5",
+    "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.210",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "prettier": "2.8.3",
-    "typescript": "4.9.4"
+    "@types/chrome": "0.0.219",
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "prettier": "2.8.4",
+    "typescript": "4.9.5"
   },
   "manifest": {
     "host_permissions": [
