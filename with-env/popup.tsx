@@ -21,6 +21,7 @@ function IndexPopup() {
         with-env example extension
       </a>
       <p>Ship name: {process.env.PLASMO_PUBLIC_SHIP_NAME}</p>
+      <p>Private data: {process.env.INFOPATH}</p>
 
       <p>{process.env.NODE_ENV}</p>
       <p>TEST DATA: {data?.url}</p>
