@@ -1,5 +1,5 @@
 import { StyleProvider } from "@ant-design/cssinjs"
-import { Button } from "antd"
+import Button from "antd/es/button"
 import antdResetCssText from "data-text:antd/dist/reset.css"
 import type { PlasmoCSConfig, PlasmoGetShadowHostId } from "plasmo"
 

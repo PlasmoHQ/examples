@@ -9,7 +9,7 @@
     "coldsauce"
   ],
   "scripts": {
-    "dev": "plasmo dev --no-source-maps",
+    "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {

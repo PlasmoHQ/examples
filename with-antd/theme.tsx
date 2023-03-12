@@ -1,4 +1,4 @@
-import { ConfigProvider } from "antd"
+import ConfigProvider from "antd/es/config-provider"
 import type { ReactNode } from "react"
 
 export const ThemeProvider = ({ children = null as ReactNode }) => (
