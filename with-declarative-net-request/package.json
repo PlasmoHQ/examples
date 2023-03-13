@@ -27,6 +27,9 @@
     "host_permissions": [
       "https://*/*"
     ],
+    "permissions": [
+      "declarativeNetRequest"
+    ],
     "declarative_net_request": {
       "rule_resources": [
         {
