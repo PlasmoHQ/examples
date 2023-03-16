@@ -9,14 +9,14 @@
     "dev": "run-p dev:*",
     "dev:plasmo": "plasmo dev",
     "dev:next": "next dev --port 1947",
-    "build": "run-p build:*",
+    "build": "run-s build:*",
     "build:plasmo": "plasmo build",
     "build:next": "next build",
     "package": "plasmo package"
   },
   "dependencies": {
     "@plasmohq/messaging": "workspace:*",
-    "next": "13.2.3",
+    "next": "13.2.4",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -24,8 +24,8 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
-    "@types/chrome": "0.0.219",
-    "@types/node": "18.14.6",
+    "@types/chrome": "0.0.224",
+    "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "prettier": "2.8.4",

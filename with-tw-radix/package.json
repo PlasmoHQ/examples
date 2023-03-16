@@ -20,8 +20,8 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@radix-ui/colors": "0.1.8",
-    "@types/chrome": "0.0.219",
-    "@types/node": "18.14.6",
+    "@types/chrome": "0.0.224",
+    "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "postcss": "8.4.21",
