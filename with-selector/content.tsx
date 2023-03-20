@@ -7,7 +7,7 @@ export const config: PlasmoCSConfig = {
 }
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = () => {
-  const anchor = querySelector(".bruh .hola .miamo louis h1")
+  const anchor = querySelector(".this .selector .should .not .exist div")
   return anchor
 }
 
