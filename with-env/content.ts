@@ -16,3 +16,8 @@ console.log(
   "Shield Frequency - SHHHH:",
   process.env.PLASMO_PUBLIC_SHIELD_FREQUENCY
 )
+
+console.log(
+  "ENV vars without the PLASMO_PUBLIC_ prefix are not injected and so will be undefined:",
+  process.env.CODE
+)
