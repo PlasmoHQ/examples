@@ -14,15 +14,15 @@
   },
   "dependencies": {
     "plasmo": "workspace:*",
-    "svelte": "3.57.0",
-    "svelte-preprocess": "5.0.2"
+    "svelte": "3.58.0",
+    "svelte-preprocess": "5.0.3"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.224",
-    "@types/node": "18.15.3",
-    "prettier": "2.8.4",
-    "typescript": "4.9.5"
+    "@types/chrome": "0.0.227",
+    "@types/node": "18.15.11",
+    "prettier": "2.8.7",
+    "typescript": "5.0.3"
   },
   "manifest": {
     "host_permissions": [
