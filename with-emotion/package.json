@@ -14,7 +14,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@emotion/cache": "11.10.5",
+    "@emotion/cache": "11.10.7",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
     "plasmo": "workspace:*",
@@ -24,9 +24,9 @@
   "devDependencies": {
     "@babel/core": "7.21.4",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.227",
+    "@types/chrome": "0.0.228",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.32",
+    "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "prettier": "2.8.7",
     "typescript": "5.0.3"
