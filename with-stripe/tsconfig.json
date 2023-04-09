@@ -6,6 +6,8 @@
     "paths": {
       "~*": ["./*"]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false
   }
 }
