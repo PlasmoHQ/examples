@@ -7,7 +7,6 @@
       "~*": ["./src/*"]
     },
     "baseUrl": ".",
-    "isolatedModules": true,
-    "verbatimModuleSyntax": false
+    "isolatedModules": true
   }
 }

@@ -27,8 +27,8 @@
     "postcss": "8.4.21",
     "prettier": "2.8.7",
     "tailwindcss": "3.3.1",
-    "typescript": "5.0.3",
-    "windy-radix-palette": "0.5.0"
+    "typescript": "5.0.4",
+    "windy-radix-palette": "0.6.0"
   },
   "manifest": {
     "host_permissions": [

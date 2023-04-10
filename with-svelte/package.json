@@ -22,7 +22,7 @@
     "@types/chrome": "0.0.228",
     "@types/node": "18.15.11",
     "prettier": "2.8.7",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "manifest": {
     "host_permissions": [

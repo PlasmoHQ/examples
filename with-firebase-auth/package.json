@@ -25,7 +25,7 @@
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "prettier": "2.8.7",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "manifest": {
     "key": "$CRX_PUBLIC_KEY",

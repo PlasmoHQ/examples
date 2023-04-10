@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "google-auth-library": "8.7.0",
-    "next": "13.2.4",
+    "next": "13.3.0",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "11.17.0",
+    "stripe": "12.0.0",
     "swr": "2.1.2"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "prettier": "2.8.7",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "manifest": {
     "key": "$CRX_PUBLIC_KEY",
