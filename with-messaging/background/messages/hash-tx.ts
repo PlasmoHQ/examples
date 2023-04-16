@@ -2,11 +2,11 @@ import type { PlasmoMessaging } from "@plasmohq/messaging"
 
 const HIDDEN_NUMBER = 541
 
-type RequestBody = {
+export type RequestBody = {
   input: number
 }
 
-type RequestResponse = number
+export type RequestResponse = number
 
 const handler: PlasmoMessaging.MessageHandler<
   RequestBody,
