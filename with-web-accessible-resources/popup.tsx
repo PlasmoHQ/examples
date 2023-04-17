@@ -22,7 +22,11 @@ function IndexPopup() {
       <h1>
         Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
       </h1>
-      <Logo />
+      <Logo
+        style={{
+          color: "blue"
+        }}
+      />
       <div
         style={{
           display: "flex"
