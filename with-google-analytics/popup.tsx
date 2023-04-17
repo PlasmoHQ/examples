@@ -1,4 +1,5 @@
 import "https://www.googletagmanager.com/gtag/js?id=$PLASMO_PUBLIC_GTAG_ID"
+
 import { useEffect, useState } from "react"
 
 function IndexPopup() {

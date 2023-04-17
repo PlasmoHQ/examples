@@ -1,6 +1,6 @@
-import {Provider} from "jotai";
+import { Provider } from "jotai"
 
-import CounterView from "~counter";
+import CounterView from "~counter"
 
 function IndexPopup() {
   return (
