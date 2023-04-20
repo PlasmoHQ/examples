@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@emotion/react": "11.10.6",
-    "@mantine/core": "6.0.6",
-    "@mantine/hooks": "6.0.6",
+    "@mantine/core": "6.0.8",
+    "@mantine/hooks": "6.0.8",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -24,9 +24,9 @@
   "devDependencies": {
     "@babel/core": "7.21.4",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.228",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.33",
+    "@types/chrome": "0.0.233",
+    "@types/node": "18.15.12",
+    "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "prettier": "2.8.7",
     "typescript": "5.0.4"
