@@ -1,4 +1,4 @@
-import type { PlasmoCSConfig } from "plasmo"
+import type { PlasmoCSConfig, PlasmoRender } from "plasmo"
 import { createRoot } from "react-dom/client"
 
 export const config: PlasmoCSConfig = {
@@ -28,7 +28,7 @@ const PlasmoOverlay = () => {
   )
 }
 
-export const render = async ({ createRootContainer }) => {
+export const render: PlasmoRender = async ({ createRootContainer }) => {
   const rootContainer = await createRootContainer()
   const root = createRoot(rootContainer)
   root.render(<PlasmoOverlay />)
