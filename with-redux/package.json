@@ -26,12 +26,12 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.233",
+    "@types/chrome": "0.0.235",
     "@types/jest": "29.5.1",
-    "@types/node": "18.15.12",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
-    "prettier": "2.8.7",
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.2",
+    "@types/react-dom": "18.2.3",
+    "prettier": "2.8.8",
     "typescript": "5.0.4"
   },
   "manifest": {

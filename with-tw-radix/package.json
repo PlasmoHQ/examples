@@ -20,15 +20,15 @@
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@radix-ui/colors": "0.1.8",
-    "@types/chrome": "0.0.233",
-    "@types/node": "18.15.12",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
+    "@types/chrome": "0.0.235",
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.2",
+    "@types/react-dom": "18.2.3",
     "postcss": "8.4.23",
-    "prettier": "2.8.7",
-    "tailwindcss": "3.3.1",
+    "prettier": "2.8.8",
+    "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
-    "windy-radix-palette": "0.6.0"
+    "windy-radix-palette": "0.6.1"
   },
   "manifest": {
     "host_permissions": [
