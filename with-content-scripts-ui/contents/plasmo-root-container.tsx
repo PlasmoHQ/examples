@@ -1,4 +1,5 @@
-import type { PlasmoCSConfig, PlasmoRender } from "plasmo"
+import type { PlasmoCSConfig, PlasmoCSUIProps, PlasmoRender } from "plasmo"
+import type { FC } from "react"
 import { createRoot } from "react-dom/client"
 
 export const config: PlasmoCSConfig = {
@@ -16,7 +17,7 @@ export const getRootContainer = () =>
     }, 137)
   })
 
-const PlasmoOverlay = () => {
+const PlasmoOverlay: FC<PlasmoCSUIProps> = () => {
   return (
     <span
       style={{
