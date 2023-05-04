@@ -1,9 +1,19 @@
 import cssText from "data-text:~/contents/plasmo-overlay.css"
-import type { PlasmoCSConfig } from "plasmo"
+import type { PlasmoCSConfig, PlasmoWatchOverlayAnchor } from "plasmo"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"],
   css: ["font.css"]
+}
+
+export const watchOverlayAnchor: PlasmoWatchOverlayAnchor = (
+  updatePosition
+) => {
+  const interval = setInterval(() => {
+    updatePosition()
+  }, 137)
+
+  return () => clearInterval(interval)
 }
 
 export const getStyle = () => {
