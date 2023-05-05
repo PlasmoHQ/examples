@@ -1,4 +1,9 @@
-import type { PlasmoCSConfig, PlasmoCSUIProps, PlasmoRender } from "plasmo"
+import type {
+  PlasmoCSConfig,
+  PlasmoCSUIJSXContainer,
+  PlasmoCSUIProps,
+  PlasmoRender
+} from "plasmo"
 import type { FC } from "react"
 import { createRoot } from "react-dom/client"
 
@@ -29,7 +34,9 @@ const PlasmoOverlay: FC<PlasmoCSUIProps> = () => {
   )
 }
 
-export const render: PlasmoRender = async ({ createRootContainer }) => {
+export const render: PlasmoRender<PlasmoCSUIJSXContainer> = async ({
+  createRootContainer
+}) => {
   const rootContainer = await createRootContainer()
   const root = createRoot(rootContainer)
   root.render(<PlasmoOverlay />)
