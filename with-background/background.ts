@@ -5,5 +5,11 @@ console.log(
 )
 
 chrome.action.onClicked.addListener(() => {
-  console.log(generateMnemonic())
+  console.log(`action clicked: ${generateMnemonic()}`)
+})
+
+chrome.commands.onCommand.addListener((command) => {
+  if (command === "test") {
+    console.log(`test command: ${generateMnemonic()}`)
+  }
 })

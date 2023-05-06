@@ -32,6 +32,14 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
-    ]
+    ],
+    "commands": {
+      "test": {
+        "suggested_key": {
+          "default": "Alt+W"
+        },
+        "description": "Open the extension main popup"
+      }
+    }
   }
 }
