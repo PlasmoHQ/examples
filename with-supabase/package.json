@@ -13,7 +13,9 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.21.0",
+    "@supabase/supabase-js": "2.22.0",
+    "@plasmohq/storage": "workspace:*",
+    "@plasmohq/messaging": "workspace:*",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -28,10 +30,10 @@
     "typescript": "5.0.4"
   },
   "manifest": {
+    "key": "$CRX_KEY",
     "host_permissions": [
       "https://*/*"
     ],
-    "key": "$CRX_KEY",
     "web_accessible_resources": [
       {
         "resources": [
