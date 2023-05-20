@@ -7,7 +7,7 @@ type User = {
 }
 
 const Search = () => {
-  const [username, setUsername] = useState<string>()
+  const [username, setUsername] = useState("")
 
   const { status, error, data } = useQuery<boolean, Error, User>(
     ["githubUser", username],
