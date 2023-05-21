@@ -1,4 +1,11 @@
+import * as _Sentry from "@sentry/react"
 import { useState } from "react"
+
+const Sentry = _Sentry
+
+Sentry.init({
+  dsn: process.env.PLASMO_PUBLIC_SENTRY_DSN
+})
 
 function IndexNewtab() {
   const [data, setData] = useState("")
@@ -25,4 +32,4 @@ function IndexNewtab() {
   )
 }
 
-export default IndexNewtab
+export default Sentry.withProfiler(IndexNewtab)
