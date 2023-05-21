@@ -1,7 +1,7 @@
-import { NavigateFunction, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export const Home = () => {
-  const navigation: NavigateFunction = useNavigate()
+  const navigation = useNavigate()
 
   const onNextPage = (): void => {
     navigation("/about")
@@ -10,7 +10,8 @@ export const Home = () => {
   return (
     <div style={{ padding: 16 }}>
       <span>Home page</span>
-      <button onClick={onNextPage}>About</button>
+      <button onClick={() => navigation("/about")}>About</button>
+      <button onClick={() => navigation("/lazy")}>Lazy</button>
     </div>
   )
 }
