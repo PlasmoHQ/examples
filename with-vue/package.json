@@ -14,12 +14,12 @@
   },
   "dependencies": {
     "plasmo": "workspace:*",
-    "vue": "3.2.47"
+    "vue": "3.3.4"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.235",
-    "@types/node": "18.16.3",
+    "@types/chrome": "0.0.236",
+    "@types/node": "20.2.3",
     "prettier": "2.8.8",
     "typescript": "5.0.4"
   },

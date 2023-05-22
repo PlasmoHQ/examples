@@ -36,8 +36,9 @@
 }
 </style>
 
-<script setup>
+<script setup lang="ts">
 import { reactive } from "vue"
+import type { App } from "vue"
 
 const state = reactive({ count: 0, action: null })
 
@@ -50,4 +51,11 @@ function decrement() {
   state.count--
   state.action = "decrement"
 }
+
+defineOptions({
+  prepare(app: App) {
+    // Use any plugins here:
+    // app.use
+  }
+})
 </script>
