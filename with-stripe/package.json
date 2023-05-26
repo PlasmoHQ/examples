@@ -17,19 +17,19 @@
   },
   "dependencies": {
     "google-auth-library": "8.8.0",
-    "next": "13.4.3",
+    "next": "13.4.4",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "12.6.0",
+    "stripe": "12.7.0",
     "swr": "2.1.5"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
     "@plasmohq/rps": "workspace:*",
-    "@types/chrome": "0.0.236",
-    "@types/node": "20.2.3",
+    "@types/chrome": "0.0.237",
+    "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "prettier": "2.8.8",

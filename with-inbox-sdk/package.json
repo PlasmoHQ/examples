@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.236",
-    "@types/inboxsdk": "2.0.9",
-    "@types/node": "20.2.3",
+    "@types/chrome": "0.0.237",
+    "@types/inboxsdk": "2.0.10",
+    "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "kefir": "3.8.8",
