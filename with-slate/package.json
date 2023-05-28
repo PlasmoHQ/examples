@@ -1,0 +1,37 @@
+{
+  "name": "with-slate",
+  "displayName": "With slate",
+  "version": "0.0.1",
+  "description": "With slate editor",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "slate": "0.94.1",
+    "slate-react": "0.94.2",
+    "slate-history": "0.93.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@types/chrome": "0.0.237",
+    "@types/node": "20.2.4",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "prettier": "2.8.8",
+    "typescript": "5.0.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  },
+  "contributors": [
+    "lgvic"
+  ]
+}
