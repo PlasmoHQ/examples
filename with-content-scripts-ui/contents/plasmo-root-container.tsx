@@ -14,9 +14,11 @@ export const config: PlasmoCSConfig = {
 export const getRootContainer = () =>
   new Promise((resolve) => {
     const checkInterval = setInterval(() => {
-      const rootContainer = document.getElementById("itero")
-      if (rootContainer) {
+      const rootContainerParent = document.querySelector(`[href="/docs"]`)
+      if (rootContainerParent) {
         clearInterval(checkInterval)
+        const rootContainer = document.createElement("div")
+        rootContainerParent.appendChild(rootContainer)
         resolve(rootContainer)
       }
     }, 137)
@@ -26,10 +28,15 @@ const PlasmoOverlay: FC<PlasmoCSUIProps> = () => {
   return (
     <span
       style={{
+        borderRadius: 4,
         background: "yellow",
-        padding: 12
+        padding: 4,
+        position: "absolute",
+        top: 0,
+        left: 0,
+        transform: "translateY(-24px) translateX(42px)"
       }}>
-      HELLO WORLD ROOT CONTAINER
+      CSUI ROOT CONTAINER
     </span>
   )
 }

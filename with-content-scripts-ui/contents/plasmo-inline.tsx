@@ -5,13 +5,22 @@ export const config: PlasmoCSConfig = {
 }
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = () =>
-  document.querySelector("#supercharge > h3 > span")
+  document.querySelector(`[href="/#pricing"]`)
 
 // Use this to optimize unmount lookups
 export const getShadowHostId = () => "plasmo-inline-example-unique-id"
 
 const PlasmoInline = () => {
-  return <button>Custom button</button>
+  return (
+    <div
+      style={{
+        borderRadius: 4,
+        padding: 4,
+        background: "pink"
+      }}>
+      CSUI INLINE
+    </div>
+  )
 }
 
 export default PlasmoInline

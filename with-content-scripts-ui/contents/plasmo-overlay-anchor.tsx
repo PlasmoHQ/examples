@@ -5,15 +5,16 @@ export const config: PlasmoCSConfig = {
 }
 
 export const getOverlayAnchor: PlasmoGetOverlayAnchor = async () =>
-  document.querySelector("#pricing")
+  document.querySelector(`h1`)
 
 const PlasmoPricingExtra = () => (
   <span
     style={{
-      background: "white",
-      padding: 12
+      borderRadius: 4,
+      background: "beige",
+      padding: 4
     }}>
-    HELLO WORLD
+    CSUI OVERLAY ANCHOR
   </span>
 )
 
