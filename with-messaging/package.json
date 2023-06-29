@@ -37,8 +37,14 @@
       "tabs"
     ],
     "host_permissions": [
-      "https://*/*"
-    ]
+      "https://*/*",
+      "http://*/*"
+    ],
+    "externally_connectable": {
+      "matches": [
+        "*://*.localhost.com/*"
+      ]
+    }
   },
   "contributors": [
     "louis <louis@plasmo.com>",

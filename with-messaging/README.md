@@ -2,6 +2,23 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 ## Getting Started
 
+### Note for pub-sub example
+
+To test the externally connectable API (pub-sub):
+
+1. Configure a second-level domain via your host file. This example uses the config below:
+
+```
+localhost localhost.com
+```
+
+2. Add an `.env` file containing the extension ID (see `example.env`)
+
+3. Follow the development server step
+4. Navigate to `https://localhost.com:1947/client-hub-a` to test out the API.
+
+### Development server
+
 First, run the development server:
 
 ```bash
