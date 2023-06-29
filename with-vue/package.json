@@ -18,10 +18,10 @@
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.237",
-    "@types/node": "20.2.5",
+    "@types/chrome": "0.0.239",
+    "@types/node": "20.3.2",
     "prettier": "2.8.8",
-    "typescript": "5.1.3"
+    "typescript": "5.1.6"
   },
   "manifest": {
     "host_permissions": [
