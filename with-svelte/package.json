@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "plasmo": "workspace:*",
-    "svelte": "4.0.0",
+    "svelte": "4.0.1",
     "svelte-preprocess": "5.0.4"
   },
   "devDependencies": {
