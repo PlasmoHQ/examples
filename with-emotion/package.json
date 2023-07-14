@@ -22,13 +22,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.22.5",
+    "@babel/core": "7.22.9",
     "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
-    "@types/chrome": "0.0.239",
-    "@types/node": "20.3.2",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "prettier": "2.8.8",
+    "@types/chrome": "0.0.241",
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "prettier": "3.0.0",
     "typescript": "5.1.6"
   },
   "manifest": {
