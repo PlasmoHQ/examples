@@ -1,18 +1,22 @@
-import { MantineProvider } from "@mantine/core"
-import type { EmotionCache } from "@mantine/core"
-import type { PropsWithChildren } from "react"
+import type { EmotionCache, MantineProviderProps } from "@mantine/core";
 
-interface Props extends PropsWithChildren {
-  emotionCache?: EmotionCache
+import { MantineProvider } from "@mantine/core";
+import type { PropsWithChildren } from "react";
+
+interface Props extends PropsWithChildren<MantineProviderProps> {
+  emotionCache?: EmotionCache;
 }
 
-export function ThemeProvider({ emotionCache, children }: Props) {
+export function ThemeProvider({
+  emotionCache,
+  children,
+  ...props
+}: Props) {
   return (
     <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      emotionCache={emotionCache}>
+      emotionCache={emotionCache}
+      {...props}>
       {children}
     </MantineProvider>
-  )
-}
+  );
+};

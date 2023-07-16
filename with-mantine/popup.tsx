@@ -1,13 +1,13 @@
 import { Anchor, Button, Input, Stack, Text } from "@mantine/core"
-import { useState } from "react"
 
 import { ThemeProvider } from "~theme"
+import { useState } from "react"
 
 function IndexPopup() {
   const [data, setData] = useState("")
 
   return (
-    <ThemeProvider>
+    <ThemeProvider withNormalizeCSS withGlobalStyles>
       <Stack miw={240} p="lg">
         <Text fw="bold" size="xl">
           Welcome to your{" "}
