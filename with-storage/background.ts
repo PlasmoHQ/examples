@@ -1,6 +1,7 @@
+import assert from "assert"
+
 import { Storage } from "@plasmohq/storage"
 import { SecureStorage } from "@plasmohq/storage/secure"
-import assert from "assert"
 
 const PASSWORD = "password"
 const TEST_KEY = "ship"

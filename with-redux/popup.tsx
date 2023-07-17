@@ -1,5 +1,6 @@
-import { PersistGate } from "@plasmohq/redux-persist/integration/react"
 import { Provider } from "react-redux"
+
+import { PersistGate } from "@plasmohq/redux-persist/integration/react"
 
 import { CounterView } from "~counter"
 import { persistor, store } from "~store"

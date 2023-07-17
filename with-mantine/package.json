@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.9",
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
     "@types/chrome": "0.0.241",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",

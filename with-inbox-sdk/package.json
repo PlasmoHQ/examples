@@ -16,7 +16,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
     "@types/chrome": "0.0.241",
     "@types/inboxsdk": "2.0.10",
     "@types/node": "20.4.2",

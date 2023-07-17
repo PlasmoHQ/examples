@@ -1,5 +1,6 @@
-import { useStorage } from "@plasmohq/storage/hook"
 import type { PlasmoCSConfig } from "plasmo"
+
+import { useStorage } from "@plasmohq/storage/hook"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]

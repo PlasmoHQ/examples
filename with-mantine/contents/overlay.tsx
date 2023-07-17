@@ -1,10 +1,10 @@
 import {
   Anchor,
   Button,
+  createEmotionCache,
   Input,
   Stack,
-  Text,
-  createEmotionCache
+  Text
 } from "@mantine/core"
 import type { PlasmoCSConfig } from "plasmo"
 import { useState } from "react"

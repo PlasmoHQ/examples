@@ -18,7 +18,7 @@
     "svelte-preprocess": "5.0.4"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "workspace:*",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
     "@types/chrome": "0.0.241",
     "@types/node": "20.4.2",
     "prettier": "3.0.0",

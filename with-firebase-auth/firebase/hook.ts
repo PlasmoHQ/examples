@@ -1,10 +1,10 @@
 import {
-  GoogleAuthProvider,
-  User,
   browserLocalPersistence,
+  GoogleAuthProvider,
   onAuthStateChanged,
   setPersistence,
-  signInWithCredential
+  signInWithCredential,
+  User
 } from "firebase/auth"
 import { getFirestore } from "firebase/firestore"
 import { useEffect, useMemo, useState } from "react"

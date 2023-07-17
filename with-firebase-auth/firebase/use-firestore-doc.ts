@@ -1,7 +1,7 @@
 import {
+  doc,
   DocumentData,
   DocumentSnapshot,
-  doc,
   getDoc,
   onSnapshot,
   setDoc

@@ -1,18 +1,19 @@
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
+import { syncStorage } from "redux-persist-webextension-storage"
+
 import {
   FLUSH,
   PAUSE,
   PERSIST,
+  persistReducer,
+  persistStore,
   PURGE,
   REGISTER,
   REHYDRATE,
-  RESYNC,
-  persistReducer,
-  persistStore
+  RESYNC
 } from "@plasmohq/redux-persist"
 import { Storage } from "@plasmohq/storage"
-import { combineReducers, configureStore } from "@reduxjs/toolkit"
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
-import { syncStorage } from "redux-persist-webextension-storage"
 
 import counterSlice from "~counter-slice"
 
