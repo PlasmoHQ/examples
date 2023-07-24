@@ -3,8 +3,6 @@ import type { PlasmoCSConfig } from "plasmo"
 
 import { CountButton } from "~features/count-button"
 
-import "~base.css"
-
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }

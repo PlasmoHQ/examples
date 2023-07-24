@@ -1,6 +1,5 @@
 import { CountButton } from "~features/count-button"
 
-import "~base.css"
 import "~style.css"
 
 function IndexPopup() {
