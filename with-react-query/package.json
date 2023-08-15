@@ -14,19 +14,19 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.29.19",
-    "@tanstack/react-query-devtools": "4.29.19",
+    "@tanstack/react-query": "4.32.6",
+    "@tanstack/react-query-devtools": "4.32.6",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "@types/chrome": "0.0.241",
-    "@types/node": "20.4.2",
-    "@types/react": "18.2.15",
+    "@types/chrome": "0.0.243",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
-    "prettier": "3.0.0",
+    "prettier": "3.0.2",
     "typescript": "5.1.6"
   },
   "manifest": {
