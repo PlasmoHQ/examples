@@ -12,12 +12,17 @@ export const getStyle: PlasmoGetStyle = async () => {
   return style
 }
 
+export const getShadowHostId = () => "plasmo-overlay-123"
+
 function PlasmoOverlay({ anchor }: PlasmoCSUIProps) {
   const [data, setData] = useState("")
 
   return (
     // If you are using a ThemeProvider put it after the StyleSheetManager
-    <StyleSheetManager target={anchor.element.firstElementChild.shadowRoot}>
+    <StyleSheetManager
+      target={anchor.element.firstElementChild.shadowRoot.getElementById(
+        getShadowHostId()
+      )}>
       <Container>
         <h2>
           Welcome to your{" "}
