@@ -30,7 +30,7 @@ export const useFirebase = () => {
     setIsLoading(true)
     chrome.identity.getAuthToken({ interactive: true }, async function (token) {
       if (chrome.runtime.lastError || !token) {
-        console.error(chrome.runtime.lastError)
+        console.error(chrome.runtime.lastError.message)
         setIsLoading(false)
         return
       }
