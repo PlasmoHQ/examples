@@ -1,5 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit"
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import type { TypedUseSelectorHook } from "react-redux"
 import { syncStorage } from "redux-persist-webextension-storage"
 
 import {
