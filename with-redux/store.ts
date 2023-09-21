@@ -61,8 +61,22 @@ export const persistor = persistStore(store)
 // This is what makes Redux sync properly with multiple pages
 // Open your extension's options page and popup to see it in action
 new Storage().watch({
-  [`persist:${persistConfig.key}`]: () => {
-    persistor.resync()
+  [`persist:${persistConfig.key}`]: (change) => {
+    const { oldValue, newValue } = change
+    const updatedKeys = []
+    for (const key in oldValue) {
+      if (oldValue[key] !== newValue?.[key]) {
+        updatedKeys.push(key)
+      }
+    }
+    for (const key in newValue) {
+      if (oldValue?.[key] !== newValue[key]) {
+        updatedKeys.push(key)
+      }
+    }
+    if (updatedKeys.length > 0) {
+      persistor.resync()
+    }
   }
 })
 
