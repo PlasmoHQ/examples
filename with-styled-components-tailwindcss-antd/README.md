@@ -1,4 +1,12 @@
+## Preview
+
+https://github.com/code4you2021/examples/assets/83153991/8dda16a0-8f79-4939-8333-bec1d4d36741
+
+8fa6d9bb
+
+
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+
 
 ## Getting Started
 
