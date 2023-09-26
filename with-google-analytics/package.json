@@ -5,7 +5,8 @@
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "louisgv"
+    "louisgv",
+    "acorn221"
   ],
   "scripts": {
     "dev": "plasmo dev",
@@ -13,6 +14,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "workspace:1.8.0",
     "plasmo": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -27,8 +29,11 @@
     "typescript": "5.2.2"
   },
   "manifest": {
+    "permissions": [
+      "storage"
+    ],
     "host_permissions": [
-      "https://ssl.google-analytics.com",
+      "https://www.google-analytics.com/*",
       "https://*/*"
     ]
   }
