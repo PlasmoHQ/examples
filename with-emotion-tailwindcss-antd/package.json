@@ -13,6 +13,7 @@
     "@emotion/cache": "11.11.0",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
+    "@ant-design/cssinjs": "1.17.0",
     "antd": "5.9.2",
     "plasmo": "workspace:*",
     "react": "18.2.0",
