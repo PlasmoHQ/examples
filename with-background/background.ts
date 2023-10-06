@@ -16,7 +16,7 @@ const handleClick = (tab) => {
   console.log("clicked", tab.id);
   if (!tab.id) throw new Error("tab id not found");
   chrome.tabs.sendMessage(tab.id, {
-    name: "show-pintoolbox-dialog"
+    name: "show-dialog"
   });
 };
 
