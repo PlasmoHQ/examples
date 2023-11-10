@@ -16,22 +16,22 @@
     "build:next": "next build"
   },
   "dependencies": {
-    "google-auth-library": "9.0.0",
-    "next": "13.4.19",
+    "google-auth-library": "9.2.0",
+    "next": "14.0.2",
     "plasmo": "workspace:*",
     "puro": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "stripe": "13.4.0",
-    "swr": "2.2.2"
+    "stripe": "14.4.0",
+    "swr": "2.2.4"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
     "@plasmohq/rps": "workspace:*",
-    "@types/chrome": "0.0.245",
-    "@types/node": "20.5.9",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
   },

@@ -14,13 +14,13 @@
   },
   "dependencies": {
     "plasmo": "workspace:*",
-    "svelte": "4.2.0",
+    "svelte": "4.2.2",
     "svelte-preprocess": "5.0.4"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
-    "@types/chrome": "0.0.245",
-    "@types/node": "20.5.9",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
   },
