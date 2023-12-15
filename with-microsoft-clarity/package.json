@@ -1,0 +1,53 @@
+{
+  "name": "with-microsoft-clarity",
+  "displayName": "With Microsoft Clarity",
+  "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "acorn221"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "plasmo test"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "workspace:*",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
+    "plasmo": "workspace:*",
+    "process": "0.11.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stream-browserify": "3.0.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://plasmo.com/*"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "resources/clarity.js"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ]
+  }
+}
