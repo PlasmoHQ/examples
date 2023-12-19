@@ -1,0 +1,52 @@
+{
+  "name": "with-client-tests",
+  "displayName": "With client tests",
+  "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "acorn221"
+  ],
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/messaging": "workspace:*",
+    "@types/tape": "5.6.4",
+    "ajv": "8.12.0",
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tape": "5.7.2"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "~assets/*/**"
+        ],
+        "matches": [
+          "https://*/*"
+        ]
+      }
+    ]
+  }
+}
