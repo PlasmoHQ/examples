@@ -1,0 +1,40 @@
+{
+  "name": "with-mantine-v7",
+  "displayName": "With mantine v7",
+  "version": "0.0.1",
+  "description": "with Mantine v7",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "Plasmo Corp. <foss@plasmo.com>"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "plasmo test"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+    "@tabler/icons-react": "^2.44.0",
+    "plasmo": "0.84.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.251",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "postcss": "^8.4.32",
+    "postcss-preset-mantine": "^1.12.2",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
