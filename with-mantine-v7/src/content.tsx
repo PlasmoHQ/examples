@@ -33,10 +33,6 @@ export const getStyle: PlasmoGetStyle = () => {
 };
 
 /* -------------------------------------------------------------------------- */
-/*                                   Mantine                                  */
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
 /*                                 Components                                 */
 /* -------------------------------------------------------------------------- */
 
@@ -61,7 +57,7 @@ const App = () => {
 /* -------------------------------------------------------------------------- */
 
 const PlasmoContent = () => {
-    //If you do not do this, the portal components will not get the theme
+    //Note: If you do not do this, the portal components will not get the theme
     //Perhaps someone can do this at custom plasmo rootcontainer render
     setMantineColorScheme("light")
     return (

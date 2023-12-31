@@ -5,7 +5,8 @@
   "description": "with Mantine v7",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "Plasmo Corp. <foss@plasmo.com>"
+    "Plasmo Corp. <foss@plasmo.com>",
+    "HappyGentle"
   ],
   "scripts": {
     "dev": "plasmo dev",
