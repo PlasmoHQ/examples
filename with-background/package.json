@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "test": "plasmo test"
+    "package": "plasmo package"  
   },
   "dependencies": {
     "bip39": "3.1.0",

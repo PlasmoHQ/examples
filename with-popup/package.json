@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "test": "plasmo test"
+    "package": "plasmo package"
   },
   "dependencies": {
     "plasmo": "workspace:*",
