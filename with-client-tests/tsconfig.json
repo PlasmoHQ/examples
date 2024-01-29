@@ -6,6 +6,7 @@
     "paths": {
       "~*": ["./*"]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "isolatedModules": true
   }
 }

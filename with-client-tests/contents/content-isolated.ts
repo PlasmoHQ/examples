@@ -1,5 +1,5 @@
 import type { PlasmoCSConfig } from "plasmo";
-import expectedDom from "data-text:~assets/expectedHeader.html";
+import expectedDom from "data-text:~assets/expected-header.html";
 import { normalizeStructure } from "~contents-helpers/dom-structure";
 import { getTestFunction } from "~contents-helpers/get-test-function";
 

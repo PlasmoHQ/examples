@@ -7,5 +7,5 @@ export const config: PlasmoCSConfig = {
 };
 
 relayMessage({
-  name: "testHandler",
+  name: "test-handler",
 });
