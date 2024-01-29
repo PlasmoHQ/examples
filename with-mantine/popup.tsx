@@ -7,7 +7,7 @@ function IndexPopup() {
   const [data, setData] = useState("")
 
   return (
-    <ThemeProvider withNormalizeCSS withGlobalStyles>
+    <ThemeProvider>
       <Stack miw={240} p="lg">
         <Text fw="bold" size="xl">
           Welcome to your{" "}

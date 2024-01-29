@@ -1,14 +1,12 @@
-import type { EmotionCache, MantineProviderProps } from "@mantine/core"
-import { MantineProvider } from "@mantine/core"
-import type { PropsWithChildren } from "react"
+import { createTheme, MantineProvider } from "@mantine/core"
 
-interface Props extends PropsWithChildren<MantineProviderProps> {
-  emotionCache?: EmotionCache
-}
-
-export function ThemeProvider({ emotionCache, children, ...props }: Props) {
+const theme = createTheme({})
+export const ThemeProvider = ({ children }) => {
   return (
-    <MantineProvider emotionCache={emotionCache} {...props}>
+    <MantineProvider
+      //https://github.com/PlasmoHQ/plasmo/issues/776#issuecomment-1811072653
+      cssVariablesSelector=":host"
+      theme={theme}>
       {children}
     </MantineProvider>
   )

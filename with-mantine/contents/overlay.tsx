@@ -1,35 +1,32 @@
-import {
-  Anchor,
-  Button,
-  createEmotionCache,
-  Input,
-  Stack,
-  Text
-} from "@mantine/core"
-import type { PlasmoCSConfig } from "plasmo"
+import { Anchor, Button, Input, Stack, Text } from "@mantine/core"
+import mantineCssText from "data-text:@mantine/core/styles.css"
+import mantineOverrideCssText from "data-text:~styles/mantine-override.css"
+import type { PlasmoCSConfig, PlasmoGetStyle } from "plasmo"
 import { useState } from "react"
 
 import { ThemeProvider } from "~theme"
+
+import "@mantine/core/styles.css"
+//see https://github.com/PlasmoHQ/plasmo/issues/776#issuecomment-1811072653
+import "~styles/mantine-override.css"
+
+import { setMantineColorScheme } from "~utils"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"]
 }
 
-const styleElement = document.createElement("style")
-
-const styleCache = createEmotionCache({
-  key: "plasmo-mantine-cache",
-  prepend: true,
-  container: styleElement
-})
-
-export const getStyle = () => styleElement
+export const getStyle: PlasmoGetStyle = () => {
+  const style = document.createElement("style")
+  style.textContent = mantineCssText + mantineOverrideCssText
+  return style
+}
 
 function PlasmoOverlay() {
   const [data, setData] = useState("")
-
+  setMantineColorScheme("light")
   return (
-    <ThemeProvider emotionCache={styleCache}>
+    <ThemeProvider>
       <Stack miw={240} bg="white" p="lg">
         <Text fw="bold" size="xl">
           Welcome to your{" "}
