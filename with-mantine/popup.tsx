@@ -1,6 +1,7 @@
 import { Anchor, Button, Input, Stack, Text } from "@mantine/core"
 import { useState } from "react"
 
+import "@mantine/core/styles.css"
 import { ThemeProvider } from "~theme"
 
 function IndexPopup() {
