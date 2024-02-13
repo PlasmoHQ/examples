@@ -61,7 +61,7 @@ export default function IndexNewtab() {
         }
       />
 
-      <footer>Crafted by @PlamoHQ</footer>
+      <footer>Crafted by @PlasmoHQ</footer>
     </div>
   )
 }
