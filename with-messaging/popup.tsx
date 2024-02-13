@@ -48,7 +48,7 @@ function IndexPopup() {
       <br />
       <label>Text Data:</label>
       <p>{csResponse}</p>
-      <footer>Crafted by @PlamoHQ</footer>
+      <footer>Crafted by @PlasmoHQ</footer>
     </div>
   )
 }

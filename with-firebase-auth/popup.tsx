@@ -30,7 +30,7 @@ export default function IndexPopup() {
         )}
       </div>
 
-      <footer>Crafted by @PlamoHQ</footer>
+      <footer>Crafted by @PlasmoHQ</footer>
     </div>
   )
 }

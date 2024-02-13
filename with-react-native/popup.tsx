@@ -26,7 +26,7 @@ function IndexPopup() {
           window.open("https://docs.plasmo.com", "_blank")
         }}
       />
-      <Text>Crafted by @PlamoHQ</Text>
+      <Text>Crafted by @PlasmoHQ</Text>
     </View>
   )
 }
