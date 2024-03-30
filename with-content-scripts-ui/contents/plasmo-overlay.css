@@ -1,0 +1,15 @@
+.hw-top {
+  width: 100px;
+  background: red;
+  color: white;
+  font-family: "Fascinate";
+}
+
+#plasmo-shadow-container {
+  z-index: 10 !important;
+  position: fixed !important;
+}
+
+#plasmo-overlay-0 {
+  border: 8px solid aqua;
+}

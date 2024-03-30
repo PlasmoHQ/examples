@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "with-locales-i18n-vi",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Ví dụ dùng locales + i18n!",
+    "description": "Description of the extension."
+  },
+  "popup": {
+    "message": "Lý luận là khởi đầu của trí tuệ, không phải là kết thúc.  - $PLASMO_PUBLIC_QUOTE_AUTHOR",
+    "description": "Popup message."
+  }
+}

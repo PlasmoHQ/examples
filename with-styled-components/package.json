@@ -1,0 +1,36 @@
+{
+  "name": "with-styled-components",
+  "displayName": "With styled components",
+  "version": "0.0.1",
+  "description": "Integrating Styled Components styling solution with Plasmo.",
+  "author": "Nikolas Huebecker <nikolas@onward.so>",
+  "contributors": [
+    "nhuebecker"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "plasmo": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "6.1.8"
+  },
+  "devDependencies": {
+    "@babel/core": "7.23.7",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}

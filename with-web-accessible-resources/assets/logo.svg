@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" stroke="black" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 0 100 Q 25 0 75 100 z" style="fill:red;" />
+  <path d="M 0 100 Q 50 0 100 100 z" fill="green" />
+  <path d="M 50 100 Q 80 0 100 100 z" fill="currentcolor" />
+</svg>
