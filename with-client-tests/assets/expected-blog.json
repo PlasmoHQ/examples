@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "pageProps": {
+      "type": "object",
+      "properties": {
+        "posts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "tags": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "description": { "type": "string" },
+              "author": { "type": "string" },
+              "authorImageUrl": { "type": "string" },
+              "date": { "type": "string" },
+              "slug": { "type": "string" },
+              "isPinned": { "type": "boolean" },
+              "pinnedDescription": { "type": ["string", "null"] },
+              "coverUrl": { "type": "string" },
+              "time": {
+                "type": "object",
+                "properties": {
+                  "text": { "type": "string" },
+                  "minutes": { "type": "number" },
+                  "time": { "type": "integer" },
+                  "words": { "type": "integer" }
+                },
+                "required": ["text", "minutes", "time", "words"]
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "tags",
+              "description",
+              "author",
+              "authorImageUrl",
+              "date",
+              "slug",
+              "isPinned",
+              "pinnedDescription",
+              "coverUrl",
+              "time"
+            ]
+          }
+        },
+        "pinned": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "tags": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "description": { "type": "string" },
+            "author": { "type": "string" },
+            "authorImageUrl": { "type": "string" },
+            "date": { "type": "string" },
+            "slug": { "type": "string" },
+            "isPinned": { "type": "boolean" },
+            "pinnedDescription": { "type": "string" },
+            "coverUrl": { "type": "string" },
+            "time": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "minutes": { "type": "number" },
+                "time": { "type": "integer" },
+                "words": { "type": "integer" }
+              },
+              "required": ["text", "minutes", "time", "words"]
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "tags",
+            "description",
+            "author",
+            "authorImageUrl",
+            "date",
+            "slug",
+            "isPinned",
+            "pinnedDescription",
+            "coverUrl",
+            "time"
+          ]
+        }
+      },
+      "required": ["posts", "pinned"]
+    },
+    "__N_SSG": { "type": "boolean" }
+  },
+  "required": ["pageProps", "__N_SSG"]
+}
