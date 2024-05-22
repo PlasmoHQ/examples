@@ -8,7 +8,8 @@ export default function IndexPopup() {
       style={{
         display: "flex",
         flexDirection: "column",
-        padding: 16
+        padding: 16,
+        width: "300px"
       }}>
       <h1>
         Welcome to your <a href="https://www.plasmo.com">Plasmo</a> Extension!
