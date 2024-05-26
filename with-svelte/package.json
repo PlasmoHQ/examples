@@ -5,7 +5,8 @@
   "description": "A basic Plasmo extension.",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "contributors": [
-    "louisgv"
+    "louisgv",
+    "joacoesteban"
   ],
   "scripts": {
     "dev": "plasmo dev",
