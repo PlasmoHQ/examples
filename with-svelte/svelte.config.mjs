@@ -8,7 +8,10 @@ import preprocess from "svelte-preprocess"
 const config = {
   preprocess: preprocess({
     // ...svelte-preprocess options
-  })
+  }),
+  compilerOptions: {
+    css: 'injected', // this is the default mode
+  }
   // ...other svelte options
 }
 
