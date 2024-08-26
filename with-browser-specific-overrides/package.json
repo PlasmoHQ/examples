@@ -1,0 +1,63 @@
+{
+  "name": "with-browser-specific-overrides",
+  "displayName": "With browser specific overrides",
+  "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "Theodore Brockman <iam@theo.lol>",
+  "contributors": [
+    "tbrockman"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"  
+  },
+  "dependencies": {
+    "bip39": "3.1.0",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
+    "plasmo": "workspace:*",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "commands": {
+      "test": {
+        "suggested_key": {
+          "default": "Alt+W"
+        },
+        "description": "Print a console log"
+      }
+    },
+    "overrides": {
+      "chrome": {
+        "commands": {
+          "test": {
+            "suggested_key": {
+              "default": "Alt+W"
+            },
+            "description": "Print a console log"
+          },
+          "test-chrome": {
+            "suggested_key": {
+              "default": "Alt+X"
+            },
+            "description": "Print a console log specific to Chrome"
+          }
+        }
+      }
+    }
+  }
+}
