@@ -17,9 +17,8 @@ const config = {
   }),
   testEnvironment: "jsdom",
   transform: {
-    "^.+\\.ts?$": ["ts-jest", { isolatedModules: true, useESM: true }],
-    "^.+\\.tsx?$": ["ts-jest", { useESM: true, tsconfig: { jsx: "react-jsx" } }]
-  }
+    "^.+.tsx?$": ["ts-jest", {}],
+  },
 }
 
 export default config
