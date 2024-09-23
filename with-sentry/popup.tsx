@@ -3,6 +3,7 @@ import { useState } from "react"
 
 const Sentry = _Sentry
 
+// Sentry can be initialized here because this is a tab/popup and is not a shared environment
 Sentry.init({
   dsn: process.env.PLASMO_PUBLIC_SENTRY_DSN
 })
