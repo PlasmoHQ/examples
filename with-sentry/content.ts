@@ -1,5 +1,5 @@
 import type { PlasmoCSConfig } from "plasmo";
-import { scope as sentryScope, client as sentryClient } from "./sentry";
+import { scope as sentryScope } from "./sentry";
 
 export const config: PlasmoCSConfig = {
   matches: ["https://www.plasmo.com/*"],
@@ -18,5 +18,5 @@ try {
     document.body.style.background = "pink";
   });
 } catch (err) {
-  sentryClient.captureException(err);
+  sentryScope.captureException(err);
 }

@@ -28,4 +28,3 @@ sentryScope.setClient(sentryClient);
 sentryClient.init(); // initializing has to be done after setting the client on the scope
 
 export const scope = sentryScope;
-export const client = sentryClient;
