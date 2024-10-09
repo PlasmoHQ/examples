@@ -9,10 +9,10 @@ import {
   Scope
 } from "@sentry/browser";
 
+const excludedIntegrations = new Set(["BrowserApiErrors", "Breadcrumbs", "GlobalHandlers"]);
+
 const integrations = getDefaultIntegrations({}).filter((defaultIntegration) => {
-  return !["BrowserApiErrors", "Breadcrumbs", "GlobalHandlers"].includes(
-    defaultIntegration.name
-  );
+  return !excludedIntegrations.has(defaultIntegration.name);
 });
 
 const sentryClient = new BrowserClient({
