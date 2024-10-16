@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "plasmo": "workspace:*",
-    "mellowtel": "1.3.5",
+    "mellowtel": "1.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -26,10 +26,7 @@
   },
   "manifest": {
     "permissions": [
-      "activeTab",
-      "identity",
       "storage",
-      "tabs",
       "declarativeNetRequest"
     ],
     "host_permissions": [
