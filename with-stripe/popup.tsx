@@ -6,7 +6,7 @@ import { UserInfoProvider, useUserInfo } from "~core/user-info"
 const PremiumFeatureButton = () => {
   const { data, error } = useSWR<{ active: boolean }>(
     "/api/check-subscription",
-    callAPI
+    (uri: string) => callAPI(uri, { method: "GET" })
   )
   const userInfo = useUserInfo()
 
