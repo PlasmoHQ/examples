@@ -17,6 +17,9 @@
 # production
 /build
 
+# plasmo
+.plasmo
+
 # misc
 .DS_Store
 *.pem
