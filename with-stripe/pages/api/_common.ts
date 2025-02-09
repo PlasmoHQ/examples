@@ -2,7 +2,7 @@ import { OAuth2Client } from "google-auth-library"
 import Stripe from "stripe"
 
 const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY, {
-  apiVersion: "2023-08-16"
+  apiVersion: "2023-10-16"
 })
 
 // Verify the Google JWT and get the user's info
