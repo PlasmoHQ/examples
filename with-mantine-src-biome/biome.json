@@ -1,0 +1,48 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+
+  "files": {
+    "ignore": ["**/node_modules/**", "**/.plasmo/**", "**/.github/**", "**/build/**"]
+  },
+
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 86
+  },
+
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {},
+      "nursery": {},
+      "security": {},
+      "complexity": {},
+      "suspicious": {},
+      "performance": {},
+      "correctness": {
+        "noUnusedVariables": "warn",
+        "useHookAtTopLevel": "warn",
+        "useExhaustiveDependencies": "off"
+      },
+      "style": {
+        "useBlockStatements": "error"
+      }
+    }
+  }
+}
