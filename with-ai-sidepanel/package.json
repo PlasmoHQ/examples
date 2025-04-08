@@ -1,0 +1,43 @@
+{
+  "name": "with-ai-sidepanel",
+  "displayName": "With ai sidepanel",
+  "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "contributors": [
+    "louisgv",
+    "coldsauce"
+  ],
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "1.23.0",
+    "@ant-design/icons": "^6.0.0",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@ant-design/x": "^1.1.0",
+    "antd": "5.24.6",
+    "antd-style": "^3.7.1",
+    "plasmo": "0.90.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.4.1",
+    "@types/chrome": "0.0.313",
+    "@types/node": "22.14.0",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "permissions": [
+      "sidePanel"
+    ]
+  }
+}
